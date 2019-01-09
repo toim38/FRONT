@@ -1,0 +1,63 @@
+body{
+margin:10px;
+padding:0;
+text-align:center
+background:white;
+font-family sans-serif
+}
+div#conteneur{
+width:770px;
+margin:0 auto;/* marge auto qui centre le bloc apres l'avoir remonté le plus haut possible ds son affichage.*/
+text-align:left
+border:2px;stroke-linecap:#aabb44;
+background:white;
+
+
+}
+h1#header{
+height:70px;
+display:block;
+background:url(.."/img/apple.jpg")no-repeat left top;
+}
+h1header a{
+width:400px;
+height:70px;
+display:block;
+background:url("img/little apple.gif")
+text-indent:-5000px;/*le text indent negatif est fait pour cacher le texte hors de la page,ce que nous voulons.*/
+}
+ul#menu{
+height:35px;/*on lui donne une hauteur correspondant à la taille de l'image utilisé en fond*/
+margin:0%
+padding:0;
+background:url("../img/bg_menu.gif")repeat-x 0 -25px;
+list-style:none;/*on cache les puces */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

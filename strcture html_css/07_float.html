@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/07_float.css">
+    <title>Les floats</title>
+</head>
+<body>
+    <!--La propriété float indique qu'un element doit être retirer du flux normalet doit être placé du côté droit ou gauchede son conteneur.Lle texte et les autres elements en lignes(inline)entoureront alors l'element flottant,-->
+<!--un élément "flottant c'est un élément pour lequel la valeur calculé du float est differente du none-->
+<!--float implique l'utilisation d'une position en bloc cette propriete modifie la valeur de display ds certains cas-->
+<!--left:mot-clé,indiquant que l'élément doit flotter du cote gauche du blockquote qui le contient-->
+<!--right:mot-clé qui indique que l'élément doit floter du coté droit de l'élément qui le contient-->
+<!--none: mot-clé indiquant que l'élément ne flotte pas-->
+<div>
+    <p>test paragraphe contenant une <span> balise inline</span>
+    </p>
+   
+    <!--div.boite{$}*4-->
+    <div class="boite">1</div>      
+    <div class="boite">2</div>
+    <div class="clear"></div>
+    <!--la propriété clear indique si un element peut-êtrev situé à coté d'elementb flottant qui le precedent ou s'il doit être deplace vers le bas pour être en dessous de ces elements la propriete  clear s'appliqueau elements flottant comme aux element non-flottant-->
+    <div class="boite">3</div>
+    <div class="boite">4</div>
+    <div class="boite">5</div>
+    <div class="boite">6</div>
+    <div class="clear"></div>
+        
+ 
+    <div  class="t">7</div>
+    <div class="t">8</div>
+    <div class="t">9</div>
+    <div class="clear"></div>
+    
+    <div class="c"></div>
+    <div class="c"></div>
+    <div class="c"></div>
+    <div class="c"></div>
+    <div class="c"></div>
+<div class="clear"></div>
+
+    <div class="c"></div>
+    <div class="c"></div>
+    <div class="c"></div>
+<div class="clear"></div>
+
+
+
+
+
+</body>
+</html>

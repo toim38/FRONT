@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>explication des floats</title>
+</head>
+<body>
+<p>=>le floats
+    => notion de flux
+    <hr>
+    le flux d'un doc pourrait se définir comme le comportement(flux) natureld'affichage des elements d'une page web.Autrement ditb les elements succedent dans l'ordre
+    ou ils sont decl    ares dans le code html.
+    de façon simpliste,les elements de sequencage
+affichent logiquement par defaut les uns dessous des autresalors que les elements delimitant s'affichent cote à cote  <br>maintenant que nous avons evoqué ce point ,
+il faut comprendre que les balisses html ont ttes par defaut des proprietes par defaut de rendu css particuliéres
+en fait il existe deux grands groupes de balise "mark"les balises css de "bock"</p>
+mark et <mark>
+
+    les balises css de rendu en ligne (inline )ces valeurs de rendu visue coïncidentpar defaut avec le groupe appartenance html
+    des proprietes css d'un element(display,block inline,...)découle des specificités d'affichage ,son positionnement ds le flux.
+    il est possible de sortir du flux naturel
+    le type <blockquote><hr>
+    les elements de rendu css block se place tjrs l'un au dessus de l'autre(comme retour à la ligne)par exemple une suite de paragraphe (balise<p>)
+        par ailleur un element bloc occupe automatiquement tte la largeur de son conteneur et peut-être dimensioné à l'aide width height,min-witch,...<br>
+        ainsi que des elements de type inline
+        <mark><strong> a retenir <br>
+            un element de type bloc se differencie d'un element inline :
+            <ul>
+<li>il occuppe tte la largeur de son conteneur</li>
+<li>il permet l'attribution de marge verticale </li>
+<li>il permet de modifier la hauteur et la largeur</li>
+            </ul>
+            le premier point est primordial ns utiliserons bcp ce comportement ds pr la pratique ds la creation des mises en paragraphe 
+            on peut reclasser ts les elements grace à la propriete display</strong></mark>
+            </p>
+            <p
+            >=>le type inline.<br>
+        les elements rendu inlinese place tjrs l'un à coté de l'autre afin de rester ds le texte ,
+        il n'est prevu qu'il se positionne ds la page,ni de leur donner des dimensions leur taille va être 
+        determiné par le texte ou l'element qu'il contient
+        ref:"http://learnlayout.com"
+        <br>
+        la propriete css float permet de faire flotter les elements l'un à cote de l'auttre,donc modifier le comportement naturel de type <blockquote></blockquote>
+        
+        </p>
+</body>
+

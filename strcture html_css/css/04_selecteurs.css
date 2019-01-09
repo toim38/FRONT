@@ -1,0 +1,61 @@
+body{
+    font-size:25px;/* taille de la police*/
+}
+h1{
+    background-color: aquamarine;
+    color:back;
+}
+div p{
+    color: red;/*tous les "p" à l'interieur de la balise"div"*/
+}
+div p:first-child{
+    color: chartreuse; /*le 1er <p>*/
+}
+
+div p:last-child{
+    color:rgb(4, 221, 4);/*le derniers des <p>*/
+
+}
+
+div p:nth-child(even){
+    color:purple; /*cible les <p> paires*/
+}
+
+ div p:nth-child(odd){
+    color:yellow; /*cible les <p> impaires */
+}
+
+div p:nth-child(3), div p:nth-child(10){
+    color:orange; /* je cible les <p> 23 et 10 en même temps */
+}
+
+.zone1{/*pour cibler une class css on met un point*/
+color:darkaqua;
+}
+
+.zone2{
+    color:lightblue;
+}
+.lime{
+    color:brown;
+    font-size: 45px;
+}
+#zone3{/* pour appeler un "id" en css on fait "#" devant*/
+    background-color: red
+#zone3:after{/*rajouter du contenu aprés l'id zone3*/
+content:" rajouter aprés ";
+}
+#zone3:before {/*rajouter du contenu avant lID zone3*/
+content:"Touhami";
+background-color: blueviolet;
+}
+li{
+    background-color: 00ff00;
+    color:darkred
+}
+li:nth-child(2){
+    background-color:black;
+    color:white; 
+}
+
+   

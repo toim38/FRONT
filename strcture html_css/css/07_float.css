@@ -1,0 +1,58 @@
+body{
+    margin:0 auto;
+    background-color: aqua;
+    border-top-right-radius: 20px
+}
+
+div{
+    width:90%;
+    margin:0 auto;
+    background-color:mistyrose;
+    border-radius:10px;
+    }
+    .boite{
+        height:8vh;
+        width:15vh;
+        padding:5vh;
+        background:url(https://images.clipartlogo.com/files/istock/previews/2618/26180179-drawing-of-a-big-rose.jpg)no-repeat;/*background-repeat:no-repeat;*/
+        border: 5px double orchi;/*taille,style,couleur de bordure*/
+        margin: 2vh;
+        float:left;/*effet flottant,permet de placer des balises cote à cote alors que selon le flux du web standart les elements se placent les uns en dessous des autres */
+        transition:0.5s;
+         }
+    .boite:hover{/*la pseudo class :hover modifie un affichage au survol de la sourris.*/
+            margin-top:10vh;
+         }
+    .clear{
+            clear:both;/*supprime l'effet flottant*/
+         }
+    p span{/*selectionne les span contenus ds les "p"*/
+            background-color:yellow;
+            color:purple;
+    } 
+        
+ .t{
+    border-right: #4a148c;
+    height: 8vh;
+    width: 15vh;
+    padding: 5vh;
+    background: url(http://www.kolorisse-developpement.fr/wp-content/uploads/2018/09/62319012-illustration-d-une-rose-rouge-tatouage-nouveau-style-.jpg)no-repeat;
+border-radius: 25%;
+border: 5px double #790039;
+margin: 2vh;
+float:right;
+transition:margin 0.5s;
+}
+
+.c{
+    border-right: #4a148c;
+    height: 8vh;
+    width: 15vh;
+    padding: 5vh;
+    background: url(http://www.kolorisse-developpement.fr/wp-content/uploads/2018/09/62319012-illustration-d-une-rose-rouge-tatouage-nouveau-style-.jpg)no-repeat;
+border-radius: 25%;
+border: 5px double #790039;
+margin: 2vh;
+float:left;
+transition:margin 0.5s;
+}

@@ -1,0 +1,37 @@
+.vert,.brown,.cyan,.blanc,.red,.aqua{
+    height: 10vh;
+    width:10vh;
+    float: left;
+}
+.vert{
+    background:green;
+    border-top-left-radius: 25px;
+
+}
+.brown{
+    background:brown;
+    border-top-left-radius: 25px;
+
+}
+.cyan{
+    background:cyan;
+    border-right-radius:25px;
+
+}
+.blanc{
+    background:blanc;
+
+}
+.red{
+    background:red;
+border-top-left-radius:25px;
+}
+.aqua{
+    background:yellow;
+    border-top-right-radius: 25px;
+
+}
+.clear{
+    clear:left;
+  border:1px solid ; 
+}
