@@ -1,43 +1,96 @@
 body{
-margin:10px;
-padding:0;
-text-align:center
-background:white;
-font-family sans-serif
+   margin: 10px 0;
+   padding: 0;
+   text-align: center;
+   background :white;
+   font-family: 'PT Sans', sans-serif;
 }
 div#conteneur{
-width:770px;
-margin:0 auto;/* marge auto qui centre le bloc apres l'avoir remonté le plus haut possible ds son affichage.*/
-text-align:left
-border:2px;stroke-linecap:#aabb44;
-background:white;
-
-
+   width:770px;
+   margin:0 auto;/* marge auto qui centre le bloc apres l'avoir remonté le plus haut possible ds son affichage.*/
+   text-align:left;
+   border:2px solid green;
+   background:white;
 }
 h1#header{
-height:70px;
-display:block;
-background:url(.."/img/apple.jpg")no-repeat left top;
+    height:258px;
+    display: block;
+    background:url("../img/apple.jpg")no-repeat left top;
+    margin: 0;
+    
 }
-h1header a{
-width:400px;
-height:70px;
-display:block;
-background:url("img/little apple.gif")
-text-indent:-5000px;/*le text indent negatif est fait pour cacher le texte hors de la page,ce que nous voulons.*/
+
+h1#header a{
+    width:500px;
+    height:70px;
+    display:block;
+    left: 350px;
+    top: 15px;
+    background:url("../img/title.gif")no-repeat left top;
+    text-indent:-5000px;/*le text indent negatif est fait pour cacher le texte hors de la page,ce que nous voulons.*/
+    position:relative;
 }
 ul#menu{
-height:35px;/*on lui donne une hauteur correspondant à la taille de l'image utilisé en fond*/
-margin:0%
-padding:0;
-background:url("../img/bg_menu.gif")repeat-x 0 -25px;
-list-style:none;/*on cache les puces */
+   height:5px;/*on lui donne une hauteur correspondant à la taille de l'image utilisé en fond*/
+   margin:0;
+   padding:0;
+   background:url("../img/bg_menu.gif")repeat-x 0 -25px;
+   list-style:none;/*on cache les puces */
+}
+ul#menu li{
+    float: left; /*on rend les li flottants pour les afficher horizontalement*/
+    text-align: right; /*on centre le text*/
 
 }
+ul#menu li a{/*c'est sur les liens que le gros du travail est effectué*/
+    width: 130px;
+    line-height: 25px;
+    font-size:1.2em;/*taille de la police*/
+    font-weight: bold;/*mise en gras de la police*/
+    letter-spacing:2px; /*espacement des lettres*/
+    color:#fff;/*couleuer du text*/
+    display:block;/*ns pouvons dimensioné les "a" grace à la propriété display:block*/
+    text-decoration:none;/*decoration du text*/
+    border-right:2px solid#dea;/*bordure*/   
+   }
+ul#menu li a:hover{
+    /*on decale l'image de font qd la souris passe dessus */
+    background: url("../img/bg_menu.gif")repeat-x 0 0;  
+ }
+div#contenu{
+   padding:0 30px 0100px;/*h-d,b-g */
+   background-image:url("../img/bg_page.gif") no-repeat left bottom;/*petite image*/
+   background-repeat: no-repeat;
+   background-position: 15px 15px;/*créer 1 espace à droite et à gauche de l'image*/   
+}
+div#contenu h2{/*mise en forme de notre h2*/
+    padding-left: 25px;/*on decale le text en fonction de l'image*/
+    line-height:25px;/*on decale le texte avec 1 inter-ligne*/
+    font-size:1.4em;/*on precise 1 taille de police*/
+    background: url("../img/litle_apple.gif")no-repeat left bottom;/*1 petite image*/
+    color: #9b2;
+    border-bottom: 1px solid #9b2;/*bordure du bas avec une couleur*/
+}
+div#contenu h3{
+margin-left: 15px;
+padding-left: 5px;
+border-bottom: 1px solid #9b2;
+border-left: 3px solid #9b2;
+color: #9b2; 
+}
+div#contenu p{/*§ + propre*/    
+text-align:justify;
+text-indent:2em;/*identat°>à la normale pr aerer*/
+line-height:1.7em;/*hauteur de ligne >à la normale*/
+}
 
-
-
-
+p#footer {/*pieds de l   a page*/
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color:#8a0;    
+}
 
 
 

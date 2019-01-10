@@ -1,78 +1,99 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+body{
+  background: lavender;
 }
 #conteneur{
-    background:none repeat scroll0 0#336699;
-    height:600px;
-    margin:0 auto;
-    width:800 px;    
+    width: 960px;
+    background: paleturquoise;
+    color: white;
+    margin: 0 auto;
 }
-header{
-background:#ff5555;
-width:800px;
-height:70px;
-line-height: 70px;
-text-align: center;
+header {
+    background: tan;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
 }
-.gauche{
-background:#5585ff;
-width:150px;
-height:530px;
-float: left;
-line-height: 530px;
-text-align: center;
+nav {
+    background: darkslategray;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
 }
-.droite{
-background:#5585ff;
-width:150px;
-height:530px;
-float: left;
-line-height:530px;
-text-align: center;
+section{
+    height: 500px;
+    background: gray;
+    margin: 10px;
 }
-.milieu{
-background:#55d87c;
-float: left;
-height:450px;
-line-height: 530px;/*sur les elements de bloc la propriété line-height 
-indique la hauteur minimale des au sein des elements.*/
-width:500px;
-text-align: center;
+.rectangle1, .rectangle2, .rectangle3,.rectangle4 {
+    border: 1px solid;
+    float: left;
+    /* display: inline-block */
+    height: 248px;
+    width: 468px;
+  }
+    .rec1, .rec2, .rec3, .rec4{
+      border: 1px solid;
+      float: left;
+       /*display: inline-block */
+      height: 122px;
+      line-height: 122px;
+      text-align: center;
+      width: 232px;
+    }
+.rec5, .rec6, .rec7,
+.rec8, .rec9, .rec10, .rec11, .rec12,
+ {
+    border: 1px solid;
+    float: left;
+     /*display: inline-block */
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
 }
-.z_milieu{
-border:1px solid;
-float:left;
-height:448px;
-width:98px;
-text-align: center
+.rec5, .rec6, .rec7,
+.rec8{
+    border: 1px solid;
+    float: left;
+     /*display: inline-block */
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
 }
-.bas{
-background:gold;
-bottom:80px;
-height:80px;
-line-height:80px;
-left:150px;
-position: relative;
-width:500px;
-text-align: center;
+.rec9, .rec10, .rec11, .rec12{
+    border: 1px solid;
+    float: left;
+     /*display: inline-block */
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
 }
-.clear{
-clear:both;
+ .rec13, .rec14, .rec15, .rec16 {
+    border: 1px solid;
+    float: left;
+    /* display: inline-block */
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
+}
+.rectangle1{
+    background: peachpuff;
+}
+.rectangle2{
+    background: #7a9eb1;
+}
+.rectangle3{
+    background: #415865;
+}
+.rectangle4{
+    background: #ffe1b3;
+}
+footer {
+    background: silver;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
 }

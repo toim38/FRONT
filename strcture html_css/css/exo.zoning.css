@@ -21,10 +21,10 @@ nav{
 section{
     background-color: blue;
     height:500px;
-    margin: 10px
+    margin: 10px;
 }
-.rectangle1,rectangle2,rectangle3,rectangle4}
-border:1px solid;
+.rectangle1,rectangle2,rectangle3,rectangle4
+{border:1px solid;
 float:left;
 /* display:inline-bloc */
 height:248px;
@@ -51,9 +51,4 @@ width:468px;
 .rec5,rec6,rec7
 .rec8{
 border: 1px solid;
-float: left;
-
-
-
-
-}
+float: left;}
