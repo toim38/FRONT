@@ -1,0 +1,96 @@
+.container{
+width: 800px;
+margin: 0 auto;
+background: #fff;
+border: 0.3vh solid;
+
+}
+header{
+    height: 6vh;
+padding: 1vh;
+background: blue;
+/*vh pr gére la responsivité des elements en hauyteur(viewport height)*/
+/*vw pr gére la responsivité des elements en largeur(viewport width)*/
+}
+nav{
+       height: 3vh;
+    background: red;
+    text-align:center;
+    font-size:2vw;
+    color:#fff;
+}
+/*nav A cible les liens du menu, ils n'ont pas de taille donc ils occupent la place de leur contenu*/
+nav a:hover{
+background: #73cec8;
+text-decoration: none;
+/*effacve le soulignement des liens <a></a>*/
+padding: 0.5% 0.8%
+}
+.m1,.m2,.m3,.m4{
+height: 20vh;
+width: 38%;
+padding: 5%;
+margin: 1%;
+float: left;
+
+
+}
+.m1{
+    background: orange;
+
+}
+.m2{
+
+    background: green;
+}
+.m3{
+background: yellow;
+}
+.m4{
+    background: brown;
+}
+footer{
+
+    height: 6vh;
+    background: red;
+
+}
+/********************************RESPONSIVE******************************************************************************************/
+@media(max-width:992px ){
+header {
+    height: 8vh;
+    background :pink;
+}
+
+nav{
+height: 4.5vh;
+background-size:url("images/image.jpg") 
+}
+
+.m1,.m2,.m3,.m4{
+height: 30vh;
+float: left;}
+
+.m1{
+background:
+.m2{
+    background: #046380;}
+
+.m3{
+    background: #F6E497;}
+
+.m4{
+    background:linear-gradient (to left, #B5E655, #6840a4);
+}
+
+footer{
+height: 6vh;
+background: yellow;}
+
+section{
+    margin: 1.5vh;
+}
+
+.clear{
+    clear: both;
+}

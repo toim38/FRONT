@@ -41,8 +41,8 @@ color:darkaqua;
     font-size: 45px;
 }
 #zone3{/* pour appeler un "id" en css on fait "#" devant*/
-    background-color: red
-#zone3:after{/*rajouter du contenu aprés l'id zone3*/
+    background-color: red;}
+# zone3:after{/*rajouter du contenu aprés l'id zone3*/
 content:" rajouter aprés ";
 }
 #zone3:before {/*rajouter du contenu avant lID zone3*/
