@@ -1,0 +1,22 @@
+#contener{
+    width: 960px;
+    margin: 0 auto;
+    border: 2px solid green;
+    background: url();
+    padding: 30px;
+}
+.A,.B{
+    width:450px;
+    height: 150px;
+    margin: 10px 10px;
+    background-color:yellow;
+     /*display: inline-block;/*affichage des 2 blocs alignés,
+     INELINE creer 2 cadre qui entourrent seulement  le contenu comme le surlignage,
+     BLOCK seul affichent les block l'un sur l'autre */
+    border:2px solid black;
+    vertical-align: middle;/*centrer verticalement les 2 blocsa,b=>a,b ayant les même propriété;*/
+}
+
+
+
+

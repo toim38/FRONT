@@ -1,0 +1,14 @@
+#contenu{
+    border:4px solid green;
+    margin: 50px 0 0 0;
+}
+nav{
+    background: indigo;
+    position: fixed;/*fige la position*/
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+}
+

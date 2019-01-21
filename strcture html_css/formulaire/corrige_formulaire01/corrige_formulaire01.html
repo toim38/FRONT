@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/corrige_formulaire01.css">
+    <title>Mon formulaire</title>
+</head>
+
+<body>
+    <div class="container">
+    <!--je déclare mon formulaire avec la balise Form-->
+    <form method="POST" action="#"enctype="">
+        <!--Text-->
+        <label for="pseudo">pseudo *</label><!--for est l'identifiant de l'element du formulaire-->
+        <inputid="pseudo" type="text" name="pseudo" placeholder="TitiVitry" required><br />
+            <!--requiered indique le champ doit être renseigné--input est l'entrée des données-->
+            <!--Le mot de passe--METHOD=>comment circule les données en php,enctype=>concerne la recupération-->
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="#" name="#"placeholder="password"requiered><br>
+            
+            <!--Email-->
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="email" requiered><br>
+
+            <!--Le fichier--placeholder est le texte explicatif ds le champs pas rempli-->
+            <label for="file">fichier</label>
+            <input type="file" id="file" name="file"requiered><br>
+
+            <!--case à cocher-->
+<label for="file">fichier</label>
+<select name="#" id="##">
+<!-- liste deroulante avec select--><optgroup>
+<!--option groupe ss categorieds la liste-->
+<option value=""></option>
+<option value=""></option>
+</optgroup>
+</select>
+<br>
+            <label for="choix"></label>choisisez ?</label>
+            <p>
+                <input type="checkbox" name="choix">Choix1
+                <!--Avec checkbox on coche une case par defaut-->
+                <input type="checkbox" name="choix" checked>choix2
+                <input type="checkbox" name="choix" checked>choix3
+            </p>
+            <p><label for="civilité">civilité</label>
+<input type="radio" name="civilite" value="m"checked>Monsieur
+<input type="radio" name="civilite" value="f" checked>femme
+</p>
+<label for="ville"> ville</label>
+<input type="text"id="ville" list="france">
+<datalist id ="france"></datalist>
+<option value ="#"> Paris</option>
+<option value ="#"> Lyon</option>
+<option value ="#">Nantes</option>
+
+
+</datalist>
+<br>
+<label for="cp">code postal</label>
+<input type="text" id="id" name="id" maxlength="5" pattern="[0-9]{5}">
+<br>
+<!--le datalist permet de suggerer-->
+
+<!--maxlenght impose un max de caractere et pattern le nb de caractere max-->
+
+
+    <label for= "adresse">Adresse</label>
+
+            <textarea type="range" rows="10" cols="25" name="adresse" id="adresse"></textarea>
+            <!--rows=nbr de lignes,cols=nbr de colonnes/caractères zone texte avec reglage de sa taille ROW et COLS-->
+            <br>
+            <label for="jauge">Jauge</label>
+            <input type="range"min="0" max="50" value="25"id="jauge">
+            <!--min et max correspondent à l'echelle et value à la place du curseur par defaut ici au milieu-->
+            <label for="coleur">Couleur</label>
+            <input type="color">
+            <br>
+            <input type="submit"name="inscription" value="s'incrire">
+            <input type="reset" name="effacer" value="recommencer"><br>
+            <br>
+            <!--bouton d'envoit du formulaire-->
+
+            <input type="reset">
+            
+
+            <!--bouton envoit de formulaire-->
+            <input type="submit" name="inscription" value="Envoyer">
+            <!--bouton pour vider le formulaire-->
+            <input type="reset" name="annuler" value="annuler">
+
+            </label>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+/* body{
+background: greenyellow;
+} */
+#conteneur{
+    width: 74%;
+    height: 95%;
+    color: gray;
+    margin: 0 auto;
+    text-align: center;
+    background: purple;
+}
+/*header{
+background:orange;
+height:20%;
+line-height: 20%;
+text-align: center;
+}
+nav{
+background: darkslategray;
+height: 10%;
+line-height: 10%;
+text-align: center;
+}
+section{
+height: 40%;
+background: red;
+margin: 10px;
+}
+.rectangle1,.rectangle2{
+border:1px;
+float: left;
+height: 248px;
+width: 468px;
+}
+.rec1,.rec3,.rec5,.rec7{
+border:1px solid;
+float: left;
+height: 122px;}
+
+.rec2,.rec4,.rec6,.rec8{
+border: 1px;
+float: right;
+height: 122px;
+
+}*/

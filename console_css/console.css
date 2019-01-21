@@ -1,0 +1,16 @@
+.container{
+background-color: chartreuse;
+height: 82vh;
+width: 80vw;
+margin: 0px;
+}
+header{
+background-color: maroon;
+width: 20px;
+margin: 10px;
+}
+nav{
+background-color: lightsteelblue;
+height:5vh;
+width: 20px;
+}

@@ -16,7 +16,7 @@ background: white; /*couleur de fond de mon conteneur*/
 h1#header{
 height: 258px;/*hauteur*/
 background: url("../img/apple.jpg")no-repeat left top;
-margin: 0:
+margin: 0
 }
 h1#header a{/*on donne les mêmes dimensions aux liens, chose possible
 grâce à la propriété display block; dui transforme le lien en un élément

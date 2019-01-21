@@ -1,0 +1,34 @@
+
+body{
+    margin:0 ;
+    background: url(https://goo.gl/images/rvD8Gx);
+}
+#container{
+
+    
+}
+div{
+    width:90%;
+    margin:0 auto;
+    background-color:mistyrose;
+    border-radius:10px;
+    }
+   
+
+    .boite{
+        height:8vh;
+        width:15vh;
+        padding:5vh;
+        background:url(https://goo.gl/images/rvD8Gx)no-repeat;/*background-repeat:no-repeat;*/
+        border: 5px double orchi;/*taille,style,couleur de bordure*/
+        margin: 2vh;
+        float:left;/*effet flottant,permet de placer des balises cote à cote alors que selon le flux du web standart les elements se placent les uns en dessous des autres */
+        transition:0.5s;
+         }
+    .boite:hover{/*la pseudo class :hover modifie un affichage au survol de la sourris.*/
+            margin-top:10vh;
+         }
+    .clear{
+            clear:both;/*supprime l'effet flottant*/
+         }
+  
