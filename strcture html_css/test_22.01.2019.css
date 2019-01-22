@@ -1,0 +1,37 @@
+#contenaire{
+width: 100%;
+height: 100%;
+background: aqua;
+margin: 20px solid;
+}
+header{
+background: tan;
+height: 10%;
+text-align: center;
+}
+nav{
+background: green;
+height: 30%;
+width: 80%;
+}
+section{
+
+    background: blue;
+    height: 40%;
+margin: 10px;
+}
+.rectangle1,rectangle2,rectangle3{
+border: 1px solid;
+image src="https://goo.gl/images/2aWxBS"
+}
+rec1{
+    
+border:1px;
+padding:20%;
+margin:20%;
+width:30%;
+height:30%;
+
+
+
+}
