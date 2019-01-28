@@ -1,0 +1,89 @@
+body{
+
+    background-color :#9fc5b6;
+}
+.contener{
+    background:red;
+    height: 150vh;
+    width: 50vw;
+    margin:auto;
+}
+header{
+   position: relative;
+    background-image: url(PICTURES/woddPlank.jpg);}
+    /*height:41vh;}*/
+
+
+
+
+    nav{
+top:40px;
+position: absolute;
+right:25px;   
+}
+nav a {
+margin: 30px;
+text-decoration: none
+font-size:30px;
+color:back;
+text-transform:uppercase;
+font-family:caveat Brush,cursive;
+}
+.logoResto{
+position: relative;
+display: inline block;
+margin-left:80px;
+
+}
+h1{
+font-family: caveat Brush,cursive;
+text-transform: uppercase;
+font-size:50px;
+}
+h1 span{
+font-size: 40px;
+display: inline;
+vertical-align: top;
+position: relative;
+}
+
+h1 span:after{
+top: 15px;
+content:"-";
+position: absolute;
+} 
+
+
+section{
+height: 25vh;
+background-color:beige;
+border: 1px solid;
+}
+
+footer{
+background-color:burlywood;
+height: 18vh;
+}
+
+#left{
+background: bisque;
+height: 100%;
+width: 70%;
+float: left;}
+
+.D{ 
+    background: whitesmoke;
+    height: 100%;
+    width: 70%;}
+
+.G{ 
+    background:wheat;
+    height: 100%;
+    width: 30%;}
+
+#right{
+background: yellow;
+height:100%;
+width:30%;
+float:right;
+}
