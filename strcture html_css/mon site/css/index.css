@@ -1,0 +1,218 @@
+*{
+        box-sizing: border-box;}/*ça bloque element,le recentre +une marge*/
+    html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+ {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+    h1{
+        font-size: 45px;/*taille de la police*/
+        color: white;
+        margin-top: 50px;
+        font-family: Amatic SC,cursive;/*famille de la police*/
+        text-align: center;
+        font-weight: 400;/*largeur de la police*/
+
+}
+    h2{
+        font-size: 50px;
+        color: crimson;
+        padding: 20px;
+        font-weight: bold;/*epaisseur en gras*/
+        }
+    h3{
+        font-size: 22px;
+        color: #2c3e50;
+        padding: 15px;
+    }
+    h4{
+        text-align: center;
+        margin-top: 30px;
+        color: 2c3e50;
+        font-size: 20px;
+        }
+     h5{
+        font-size: 90px;
+        color: purple;
+        padding: 20px;
+        font-weight: bold;
+        font-family: 'Amatic SC',cursive;
+        text-align: center;
+  }
+     blockquote{
+        /*indique le texte contenu ds l'element et une citation longue*/
+        font-style: italic;
+        font-size: 120%;
+  }
+          strong{/*indique que le texte a une importance*/
+        font-weight:bold;} 
+
+        main{    
+        background: mistyrose;
+
+        margin:auto 0;/*definit la taille des marges sur les 4 cotés de l'element*/
+        width: 1000px;
+            }
+      aside{
+        height: 300px;
+            }
+      section{
+        margin-top: 50px;
+        padding: 20px;
+            }
+      footer{
+        background: mistyrose;
+        height: 30px;
+      }
+      /*----------------------HEADER-------------------------------------------------------------------*/
+      header{
+        background-color:slategray;
+        height: 175px;
+
+      }
+      #logo{
+        width: 25%;
+        float: left;
+        text-align: center;
+        padding: 15px;
+            }
+
+      .clear {
+          clear: both;
+      }
+
+
+      #slogan{
+            width: 50%;
+            float: left;
+            padding: 20px;      }
+
+      #reseau sociaux a{
+            font-size:30px;
+            color:blue;
+            display: block;
+            text-align: right;
+            padding: 15px 30px 0 0;
+            text-decoration: none;/* utilisé pour decorer le text en ajoutant une ligne pouvangt être positionnée sous ,sur ou au travers le texte*/
+      }
+      #reseau sociau a:hover{
+          /*permet de specifier l'apparence d' un element au survol de la sourris*/
+          font-size: 60px;
+          transition: 2s;
+      }
+       /*-------------------NAV-----------------------------------------------------------*/
+       nav{
+            background: mistyrose;
+            border-bottom: 4px solid slategray;/* propriete qui dfinit la bordure du coté bas d'un element*/
+            text-align: center;
+            padding: 17px;
+       }
+       nav a {
+            font-family: 'Amatic SC',cursive;
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            border: 1px solid pink;
+            padding: 6px 9px;
+            border-radius: 7px;
+            margin: 0px 8px;
+       }
+       nav a :hover{
+            background: pink;
+            transition: 2s;
+                }
+.active{
+
+    background: pink;
+}
+/*-------------------NAV----------------------------------------*/
+.roboto p{
+    font-family: 'Roboto Condensed',sans-serif;
+}
+/*{
+    background:pink;
+}
+bg
+.Texte 2,3,4,7,8,9{
+color:  red;
+}
+.Texte{
+color: violet;
+}
+.Zone B{
+    color: darkgray;
+}
+.Zone C{
+
+    color: green;
+}
+
+---------------------PAGE SELECTEURS---------------------------------------*/
+.select p{
+
+color: red;
+}
+.select p:first-of-type{
+color: purple;
+}
+
+.select p:last-of-type{
+
+    color:purple;
+}
+.select.p :nth-last-of-type(5),select p:nth-last-of-type(6){
+color: #000;
+}
+select div:not(.zoneB){/*ttes lesz div du parent .select seront en gras not(.zoneB) donc la zoneB*/
+font-weight: bold;
+}
+.select .Zone A{
+
+color: red;
+}
+.select .ZoneB{
+    color: #963;
+    }
+    .select .ZoneB.couleurBleu{
+color: blue;
+    }
+    .select #zoneC{
+color: #98f32f;
+    }
+    .select ZoneD span{
+        color:#32ff32;
+    }
+/*le span prendra en compte le couleurBleu sauf pour la couleur car  on l'aura deja defini*/
+/*------------------------IMAGE---------------------------------------*/
+
+
+.imageFond{
+    background: #000 url(../img/fond.jpg)no-repeat;
+    background-size:cover;
+}
+.imageFond p{
+margin: 100px auto 200px auto;
+width: 75%;
+background: rgba(255,255,255,0.60);
+font: size 120px;
+border-radius: 10px;
+padding: 
+}
