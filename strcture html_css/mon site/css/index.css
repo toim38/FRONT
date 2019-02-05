@@ -70,9 +70,11 @@ time, mark, audio, video
         margin:auto 0;/*definit la taille des marges sur les 4 cotés de l'element*/
         width: 1000px;
             }
+
       aside{
         height: 300px;
             }
+            
       section{
         margin-top: 50px;
         padding: 20px;
@@ -211,8 +213,204 @@ color: #98f32f;
 .imageFond p{
 margin: 100px auto 200px auto;
 width: 75%;
-background: rgba(255,255,255,0.60);
-font: size 120px;
+background: rgba(255,255,255,0.60); 
+font-size: 120%;
+padding: 20px;
 border-radius: 10px;
-padding: 
+}
+
+/*.toureiffel{
+float: left;
+border-style: double 20px solid black 10px solid white;}*/
+/**Tour Eiffel****/
+img[src="img/toureiffel - Copie.jpg"]{
+margin:auto;
+width: 260px;
+display: block;
+border: 5px solid black;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.5);}
+
+
+/*.photopont{
+clear:both; 
+   }
+.photo1{
+   
+
+border:5px solid white;
+float: left;
+}
+.photo2{
+
+margin: 0 auto;
+border:5px solid white;
+float: left;  }
+
+.photo3   {
+    margin: 0 auto;
+    
+border:5px solid white;
+float: none;
+text-align: center;
+position: relative;
+}    */
+
+
+
+/*--------------ROTATION.----------------*/
+rotationImg{
+    /*image de inline-block elle comporte des marges par defaut,
+    pr supprimer ces marges ouvrir comme pr la la 1ere photo et la fermer avt la 2em
+    ou enlever les espaces HTML
+    */
+    text-align: center;}
+ .image{
+    margin: 20px;
+    border:5px solid #eee;
+    box-shadow:12px 12px 6px 6px rgba(0,0,0,0.5);
+    transition: 5s;
+}
+.image:hover{ 
+    transform:rotate(27deg);
+}
+
+.rotation360{
+    transform:rotate(-360deg);
+}
+/*-----------------LES LISTES-----------------------------------*/
+/*#contener{
+font-family:Optima, sans serif;
+font-weight: 600px;
+}
+.ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.li{
+
+
+}*/
+
+/*-----------------LES LISTES-------------------*/
+ul.fruit{
+    list-style:none;
+    /* retire les puces de la liste*/
+    }
+
+    ul.fruit li{
+display:inline-block;
+margin:15px;
+    }
+
+    li.fas{
+        font-size: 80%;        
+        color:tomato;
+    }
+
+    .imbrique, .imbrique ul{
+        padding-left: 15px;
+        margin: 5px;
+        cursor:pointer;
+            }
+
+    .asie, .eu{
+        margin-top: 20px;
+        list-style: none;
+        font-size: 20px;
+
+    }
+    .asie ul li:hover{
+        color: tomato;
+        font-size: 30px;
+        transition: 2s;
+
+    }
+    .asie span{
+        color:tomato;
+        font-size: 30px;
+        transition:1s;
+    }
+    .eu span:hover{
+        color:tomato;
+        font-size: 30px;
+        transition:1s;
+            }
+.eu ul li:hover{
+        color:tomato;
+        font-size: 30px;
+        transition:1s;
+         }
+         .asie span,.eu span{
+font-size: 25px;
+font-weight: bold;
+         }
+         /*------------------------TABLEAU--------------------------------------------------*/
+ tableau{        
+margin: 0 auto;
+ width: 80%;
+ border: 3px solid #2980b9;
+ border-collapse: collapse;
+}
+.tableau thead, .tableau tfoot{
+ background: #d0e3fa;
+}
+th{
+ border: 1px solid #2980b9;
+ width: 25%;
+ padding: 4px;
+}
+td{
+ border: 1px solid #6495ed;
+ font-size: 100%;
+ padding: 5px;
+ text-align: center;
+}
+.sec{
+ padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+         /*---------------------------------POSITION-------------------------------------------*/
+           .bleu{
+               width: 500px;
+               height: 200px;
+               margin: 0;
+               background: blue;
+               text-align: center;
+               font-size: 5px;
+               color: white;
+               line-height: 180px;
+               font-style: italic;
+
+         }
+         .marron{
+width: 500px;
+height: 500px;
+margin: auto;
+background: red;
+position: relative;
+         }
+
+.relative{
+background: red;
+width: 500px;
+height: 500px;
+position: relative;
+bottom:50px;
+margin: 0 auto
+}
+.relative div{
+position: absolute;
+bottom: 10px;
+width: 50px;
+height: 50px;
+background: blue;
+
+
+
 }
