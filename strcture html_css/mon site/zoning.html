@@ -1,80 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descrption" content="Ma premiere page en html/css">
+    <title>Ma page Structuree</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="index.html">
-    <title>zoning</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CLemonada%7COswald" rel="stylesheet">
+    <!--site google pour la police -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">">
+    <!--lien pour le "font-awesome" recuperer sur le site ds get-started-->
 </head>
+
 <body>
+    <!--corps du document -->
     <header>
-    <!--zone du haut,exp:bannière,logo,slogan....-->
-    <div id="logo">
-        <a href="index.html" target="blank"><img src="img/logo.png" alt="logo html/css">
-        </a>
-    </div>
+        <!--zone du haut,exp:bannière,logo,slogan....-->
+        <div id="logo">
+            <a href="index.html" target="blank"><img src="img/logo.png" alt="logo html/css">
+            </a>
+        </div>
 
-    <div id="slogan">
-        <h1>Mon premier site en html/css</h1>
-    </div>
+        <div id="slogan">
+            <h1>Mon premier site en html/css</h1>
+        </div>
 
-    <div id="reseau sociau">
-        <a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
-    </div>
+        <div id="reseau sociau">
+            <a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
+        </div>
 
-    <div class="clear">
-    </div>
+        <div class="clear">
+        </div>
 
-    <nav>
-        <a href="index.html">structure</a>
-        <a href="text.html">Texte</a>
-        <a href="selecteur.html">Selecteur</a>
-        <a href="image.html">Image</a>
-        <a href="position.html">Position</a>
-        <a href="zoning.html">Zoning</a>
-        <a href="liste.html">Liste</a>
-        <a href="lien-menu.html">liens&menu</a>
-        <a href="tableau.html">Tableau</a>
-        <a href="formulaire.html">Formulaire</a>
-        <a href="animation.html">Animation</a>
-        <a href="multimedia.html">multimedia</a>
+        <nav>
+            <a href="index.html">structure</a>
+            <a href="text.html">Texte</a>
+            <a href="selecteur.html">Selecteur</a>
+            <a href="image.html">Image</a>
+            <a href="position.html">Position</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="liste.html">Liste</a>
+            <a href="lien-menu.html">liens&menu</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="animation.html">Animation</a>
+            <a href="multimedia.html">multimedia</a>
 
 
-    </nav>
+        </nav>
 
-    <div id="Bonne Affaire">
+        <main>
+           
+            <!--<div id="contenaire">
+                <h5><strong>Zoning</strong></h5>
+                <div class="contenu">
+                    <h6>zoning 1</h6>
+                    <section>zone du haut</section>
+                    <span>kaki</span>
+                    <section class="zone de droite">
+                        <nav>green</nav>
+                    </section>
 
-<div class="picture">
-<img src="/structure_html_css/images/image.jpg" alt="structure_html_css">
+                    <section class="yellow">zone de gauche
 
-<section class="TEXTE">
-    <h1>le monde html</h1>
-    <span>>HTML signifie « HyperText Markup Language » qu'on peut traduire par « langage de balises pour l'hypertexte ». Il est
-    utilisé afin de créer et de représenter le contenu d'une page web et sa structure. D'autres technologies sont utilisées
-    avec HTML pour décrire la présentation d'une page (CSS) et/ou ses fonctionnalités interactives (JavaScript).
-    c'est un monde sauvage,tous c'est codes qui évoluent qui changent.
+                    </section>
+                </div>
+                
+            </div>
+        </main>
+
+        <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
+
+
+        <footer></footer>
+            
+
+    </header>
+-->
+
+<main>
+    <!-- ZONING 1 -->
+    <h2>Zoning</h2>
+    <section>
+        <h3>Zoning 1</h3>
+        <div id="zoning1">
+            <header>
+                <p>Zone du haut</p>
+            </header>
+            <aside>
+                Zone de gauche
+            </aside>
+            <section>
+                Zone de droite
+            </section>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <!-- ZONING 2 -->
+    <section>
+        <h3>Zoning 2</h3>
+        <div id="zoning2">
+            <header>
+                <p>Zone du haut<br />HEADER</p>
+            </header>
+            <aside>
+                <p>Zone de gauche<br />ASIDE</p>
+            </aside>
+            <section class="middle">
+                <p>Zone du milieu<br />MIDDLE</p>
+            </section>
+            <aside>
+                <p>Zone de droite<br />ASIDE</p>
+            </aside>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+
+    <!-- ZONING 3 -->
+    <section>
+        <h3>Zoning 3</h3>
+        <div id="zoning3">
+            <section>
+                <p>Gauche<br/>SECTION</p>
+            </section>
+
+            <section>
+                <p>Droite<br/>SECTION</p>
+                
+            </section>
+
+            <footer>
+                <p>Bas<br/>FOOTER</p>
+            </footer>
+<div class="clear"></div>
+        </div>
+    </section>
+
+
+    <section>
+        <h3>Zoning4</h3>
+        <div id="zoning4">
+            <div class="header">HEADER</div>
+            <div class="clear"></div>
+            <div class="navZoning4">
+                <p>NAV</p>
+            </div>
+             <div class="clear"></div> 
+            <div class="zoning4B"></div>
     
-    HTML fonctionne grâce à des « balises » qui sont insérées au sein d'un texte normal. Chacune de ces balises indique la
-    signification de telle ou telle portion de texte dans le site. On parle d'« hypertexte » en référence aux liens qui
-    connectent les pages web entre elles. C'est la mécanique originelle du « World Wide Web » que nous connaissons
-    aujourd'hui. En écrivant et publiant des pages web, vous devenez un acteur du Web dès que votre site est accessible en
-    ligne.
-    </span>
+            <div class="blanc">
+    
+                <div class="sect1">
+                    <p>SECTION</p>
+                    <img src="img/fond.jpg" alt="">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="footer">
+                <p>FOOTER</p>
+            </div>
+    
+    
+        </div>
+    </section>
 
-</section>
 
-
+    <section >
+        <h3>zoning 5</h3>
+        <div id="zoning5">
+        <div class="header">HEADER</div>
+        
+        <div class="navZoning5">
+            <p>NAV</p>
+        </div>
+        <div class="clear"></div>
+<div class="contenu">
+<section class="zone 1"><p>ZONE 1</p></section>
+<section class="zone 2"><p>ZONE2</p></section>
+<div class="clear"></div>
+<section class="zone 3"><p>ZONE 3</p></section>
+<section class="zone 4"><p>ZONE 4</p></section>
 </div>
+<div class="clear"></div>
+<footer>FOOTER</footer>
 
 
 
 
+    </section>
+    </section>
 
 
-    </div>
     
+</main>
+
+
 </body>
+
 </html>
