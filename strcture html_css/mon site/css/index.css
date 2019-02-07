@@ -387,8 +387,49 @@ td{
                color: white;
                line-height: 180px;
                font-style: italic;
+button{
 
-         }
+    position: fixed;
+    bottom:40px;
+    right:20px;
+    cursor:pointre;
+    border:none;
+    background: transparent;
+    font-size:350%;
+    color:slategray;
+}
+button:hover{
+color: pink;
+transition: 1s;
+}
+ .trente  {
+width: 30%;
+padding: 20px;
+font-size: 22px;
+background: #383746;
+color: efe94b;
+font-weight: bold; } 
+.cinquante{
+width: 50%;
+padding: 20px;
+font-size: 22px;
+background: #B21E4B;
+color: #e2bf81;
+font-weight: bold;
+margin-top: 7px;}
+.cent{
+width: 100%;
+padding: 20px;
+font-size: 22px;
+background: #E2BF81;
+color: #B21E4B;
+font-weight:bold;
+margin-top: 7px;}
+
+
+
+
+
          .marron{
 width: 500px;
 height: 500px;
@@ -503,6 +544,7 @@ background: #639A67;
 }
 
 /*----------------zoning 4------------------------------*/
+/*--------version djamila-------------
 #zoning4{
    width: 800px;
    border: 2px solid black;
@@ -537,7 +579,7 @@ background: #639A67;
    padding-top: 25px;
 }
 
-#zoning4.sect1{
+.sect1{
    width: 750px;
    height: 650px;
     background-color: grey ;
@@ -547,65 +589,443 @@ background: #639A67;
 #zoning4 .footer{
    background-color: brown;
 }
-#zoning4.sect1 img{
+.sect1 img{
    height: 640px;
    width: 100%;
-   margin: 0 auto;}
+   margin: 0 auto;}*/
+   #zoning4{
+    background: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 700px;
+}
+#zoning4 header{
+    height: 90px;
+    background: #D8DFE2;
+}
+#zoning4 nav{
+    height: 50px;
+    background: #71ADB5;
+}
+#zoning4 section{
+    height: 500px;
+    background: #176D81;
+    margin: 20px;
+    padding: 0;
+}
+#zoning4 footer{
+    height: 75px;
+    background: #0D3446;
+}
+#zoning4 section, footer{
+    color: white;
+}
 
-   /*------------------zoning 5-------------------------*/
-   #zoning5{
-width: 800px;
+
+
+
+
+
+
+   /*------------------zoning 5--version djamila-----------------------*/
+   
+/*#zoning5{
+   width: 800px;
    border: 2px solid black;
    margin: 0 auto;
-   text-align: center;    
-   }
-
-  #zoning5.header{
-width: 100%;
-   background-color: #d2e4f1;
+   text-align: center;
+}
+#zoning5 .header{
+   width: 100%;
+   background-color: rgb(204, 204, 70);
    height: 100px;
-   }
-   .navZoning5{
+
+}
+.navZoning5{
    width: 100%;
    height: 40px;
-   background-color: rgb(68, 207, 189);
+   background-color:rgb(189, 136, 66);
    color: black;
    margin: 0 auto;
    padding-top: 7px;
 
 }
-   #zoning5.contenu{
+#zoning5 .zoneJ{
+   width: 100%;
+   height: 10px;
+   background-color: rgb(133, 92, 6);
+}
+
+#zoning5 .blanc{
+   width: 100%;
+   height: 700px;
+   background-color: white;
+   padding-top: 25px;
+   padding-left: 25px;
+   padding-right: 20px;
+}
+
+.blanc .zone1{
+   width: 50%;
+   height: 320px;
+   background-color: rgb(180, 123, 48) ;
+   margin: 0 auto;
+   float: left;
+}
+.blanc .zone2{
+   width: 50%;
+   height: 320px;
+   background-color: rgb(204, 204, 70) ;
+   margin: 0 auto;
+   float: left;
+}
+.blanc .zone3{
+   width: 50%;
+   height: 320px;
+   background-color:  rgb(204, 204, 70) ;
+   margin: 0 auto;
+   float: left;
+}
+.blanc .zone4{
+   width: 50%;
+   height: 320px;
+   background-color:rgb(180, 123, 48)   ;
+   margin: 0 auto;
+   float: left;
+}
+.zone2 .img{
+    width: 75%;
+    height: 200px;
+    margin: 0 auto;
+}
+    
+#zoning5 .footer{
+   background-color: rgb(204, 204, 70) ;
+}
+.zone1 p{
+   font-size: 25px;
+   font-weight: bold;
+   text-shadow: 4px 4px brown;
+   color: blanchedalmond;
+}*/
+
+#zoning5{
+    background: #ECEBE9;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+#zoning5 header{
+    height: 90px;
+    background: #F8D771;
+}
+#zoning5 nav{
+    height: 50px;
+    background: #D6BC6B;
+    border-bottom: 8px solid #C19718;
+}
+#zoning5 .section{
+    background: #176D81;
+    margin: 20px;
+    padding: 0;
+}
+#zoning5 .section .z1, .z2, .z3, .z4{
+    height: 250px;
+    width: 50%;
+    float: left;
+}
+#zoning5 .z1, .z4{
+    background: #D6BC6B;
+}
+#zoning5 .z2, .z3{
+    background: #FCE38A;
+}
+#zoning5 footer{
+    height: 75px;
+    background: #F8D771;
+}
+#zoning5 section, footer{
+    color: black;
+}
+
+
+
+
+
+/*---------------ZONING 6------perso---------------------*/
+/*#zoning6{
+ width: 800px;
+   border: 1px solid black;
+   margin: 0 auto;
+   text-align: center;}
+#zoning6.header{
+   width: 100%;
+   background-color: rgb(204, 204, 70);
+   height: 100px;
+   margin: 0 auto;
+}
+.section1{
+background: red;
+height: 100px;
+width:260px;
 margin: 0 auto;
+float: left;
+}
+.section2{
+background:green ;
+width: 260px;
+height: 100px;
+margin: 0 auto;
+float: left;
+}
+.section3{
+background: yellow;
+width: 260px;
+height: 100px;
+margin: 0 auto;
+float: left;
+}*/
+
+#zoning6{
+    width: 800px;
+    margin: 0 auto;
+    color: white ;
+    text-align: center;
+}
+#zoning6 header{
+    background: #40a497;
+    height: 180px;
+}
+.haut1{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #203562;
+}
+.haut2{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: #3E588F;
+}
+.haut3{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #203562;
+}
+#zoning6 nav{
+    background: #0B5269;
+    height: 30px;
+    border: none;
+}
+#zoning6 aside{
+    background:#446878;
+    width: 20%;
+    height: 650px;
+    float: left;
+
+}
+#zoning6 section{
+    width: 80%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.slideshow{
+    background: #314A52;
+    height: 250px;
+}
+#zoning6 .a{
+    background: #C0C5CD;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#zoning6 .b{
+    background: #203562;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#zoning6 .c, .e{
+    background: #C0C5CD;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+#zoning6 .d, .f{
+    background: #203562;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+#zoning6 footer{
+    background: #0B5269;
+    height: 50px;
+    color: white ;
+}
+
+/*------------------position /pourcentage----------------------*/
+.position2{    
+
+color: #000;
+width: 85%;
+height: 20px;
+margin: 0 auto;
+}
+header{
+text-align: left;
+width: 100%;
+height: 20px;
+margin: 0;
+}
+
+.rouge{   
+background: red;
+width: 30%;
+height:5px;
+color:  gold;
+border: 1px solid red;
+margin: 0;
+}
+
+.noir{   
+background: #000;
+width: 50%;
+height: 5px;
+color: gold;
+margin: 0 ;
+border: 1px solid black;
+
+}
+
+.vert{
+background: green;
+width: 100%;
+height: 5px;
+color: gold;
+border: 1px solid green;
+margin: 0 auto;
+}
+/*-----------------float-------------------------------------*/
+
+ /* #boite{
 width: 800px;
 height: 400px;
+} */
 
-
-   }
-   #zoning5.zone1{
-       background: greenyellow;
-       width: 50%;
-       height: 100px;
-    float: left;
-    
-    }
-#zoning5.zone2{
-background: green;
-width:50% ;
-height: 100px;
+.A1{
+width: 150px;
+height: 150px;
+margin: 20px;
 float: left;
+box-shadow: 2px 2px 2px #656565;
+border: 2px solid gray;
+text-align: center;
+
 
 }
-#zoning5.zone3{
-background: greenyellow;
-width: 50%;
-height: 100px;
+.A2{
+width: 150px;
+height: 150px;
+margin: 20px;
 float: left;
+border: 2px solid gray;
+box-shadow: 2px 2px 2px #656565;
+text-align: center;
 
 }
-#zoning5.zone4{
-    background: green;
-    width: 50%;
-    height: 100px;
-    float: left;
-   
+.A3{
+width: 150px;
+height: 150px;
+margin: 20px;
+float: left;
+box-shadow: 2px 2px 2px #656565;
+border: 2px solid gray;
+text-align: center;
+
+}
+.A4{
+width: 150px;
+margin: 20px;
+Height: 150px;
+float: left;
+box-shadow: 2px 2px 2px #656565;
+border: 2px solid gray;
+text-align: center;
+
+}
+
+.A5{
+
+width: 150px;
+height: 150px;
+margin: 20px;
+float: left;
+box-shadow: 2px 2px 2px #656565;
+border: 2px solid gray;
+text-align: center;}
+
+
+.A6{
+width: 150px;
+height: 150px;
+margin: 20px;
+float: left;
+box-shadow: 2px 2px 2px #656565;
+border: 2px solid gray;
+text-align: center;}
+
+
+.A7{
+margin: 20px;
+width: 150px;
+height: 150px;
+float: left;
+box-shadow: 2px 2px 2px #656565;
+border: 2px solid gray;
+text-align: center;
+;
+}
+
+
+.A8{
+width: 150px;
+height: 150px;
+float: left;
+box-shadow: 2px 2px 2px #656565;
+margin: 20px;
+border: 2px solid gray;
+text-align: center;
+
+}
+
+.A9{
+width: 150px;
+height: 150px;
+float: left;
+box-shadow: 2px 2px 2px #656565;
+margin: 20px;
+border: 2px solid gray;
+text-align: center;
+
+}
+.A10{
+margin: 20px;
+width: 150px;
+height: 150px;
+float: left;
+box-shadow: 2px 2px 2px #656565;
+border: 2px solid gray;
+text-align: center;
+
+}
+.A1:hover,.A2:hover,.A3:hover,.A4:hover,.A5:hover,.A6:hover,.A7:hover,.A8:hover,.A9:hover,.A10r:hover{
+
+transform: rotate(50deg);
+transition: 2s;
 }
