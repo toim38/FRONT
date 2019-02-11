@@ -1,0 +1,23 @@
+#container{
+width: 100%;
+height: 100%;
+background: yellow;
+}
+.side-left{
+background-color: brown;
+height: 113vh;
+width: 53vw;
+float: left;
+}
+
+.side-right{
+background-color: red;
+    height: 104vh;
+    width: 45.2vw;
+    
+    float: right;
+
+}
+.clear{
+    clear: both;
+}
