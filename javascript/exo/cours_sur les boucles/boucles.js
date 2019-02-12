@@ -25,7 +25,7 @@ et du pb qu'on veut resoudre
 
 
 
-for (3 arguments )(objet argument est semblable à un tableau correspondant au argument passés à une fonction)
+for (3 arguments )(objet argument est semblable à un tableau correspondant aux arguments passés à une fonction)
 
 
 
@@ -54,7 +54,7 @@ for (3 arguments )(objet argument est semblable à un tableau correspondant au a
        /*---------------------------EXERCICE--------------------------------------------
 
 
-       J'ai mille eurosur mon compte ,chaque mois j'ajoute50€
+       J'ai mille euro sur mon compte ,chaque mois j'ajoute50€
        combien de temps faut-il pour avoir 2000€ sur mon compte?*/
       /* var a = 2000;
        var i =1000;
