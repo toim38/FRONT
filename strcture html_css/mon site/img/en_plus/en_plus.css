@@ -1,0 +1,30 @@
+#contener{
+background-color: yellow;
+width: 1000px;
+height: 1350px;
+margin: 0 auto;
+
+}
+.nav{
+font-family: fantasy,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;
+color: bisque;
+width: 850px;
+/* height: ; */
+}
+.foto{
+background-image: url(toureiffel-Copie.jpg);
+
+}
+span{
+    background: red;
+}
+.col{
+    width: 20vw;
+    height: 40vh;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}

@@ -65,7 +65,7 @@ const PAYS=France;/:string
 const AN='2020';//string
 const BIRTH=2020;//nombre
 */
-/*------------6.TYPEOF permet de connaitre le type de variable*/
+/*------------6.TYPE OF permet de connaitre le type de variable*/
 /*console.log(vacances);
 console.log(typeof vacances);
 console.log(annee);
