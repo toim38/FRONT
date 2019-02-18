@@ -1,0 +1,65 @@
+
+#contenu {
+    height: 990px;
+    width: 833px;
+    background-color: blue;
+    margin-top: 30px auto;
+    margin: 0 auto;
+}
+
+header{
+    height: 40px;
+    width: 800px;
+}
+
+main{
+height:700px;
+width: 800px;
+background: gray;
+margin: 0 auto;
+}
+
+section{
+height: 80px;
+width: 790px;
+background: yellow;
+margin: 0 auto;}
+.a{
+float: left;
+position: relative;
+}
+
+.b{
+float: right;
+position: relative;
+text-align: center;
+}
+.c{
+float: left
+}
+.d{
+    float: right
+}
+div img{
+text-align: center;
+ background-image: url(//entrainement/BIO_18.02/pictures/carrelage1.jpg/carrelage6.jpg); */
+padding:10px;
+}
+
+div p{
+    text-align: center;
+font-size: 12px;
+font-family: fantasy;
+margin: 0 auto;
+}
+
+footer{
+    height: 230px;
+    width: 800px;
+    background: red;
+    margin: 0 auto;
+}
+
+.clear{
+clear: both;
+}
