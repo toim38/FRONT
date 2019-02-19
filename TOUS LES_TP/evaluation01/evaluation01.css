@@ -1,0 +1,115 @@
+#container{
+height:1600px;
+width: 1200px;
+background: #000;
+margin: 0 auto;
+}
+header{
+height:130px;
+width: 1130px;
+background: whitesmoke;
+margin: 0 auto;
+}
+ .image1{
+float: left;
+ }
+ .image2{
+     float: right;}
+ .image3{
+     float: right;
+ }
+ .combat{
+    height: 415px;
+    width: 1000px;
+    margin: 0 auto;      
+ }
+
+ .produits{
+height: 895px;
+width: 785px;
+margin: 0 auto ;
+background: gray;
+
+}
+
+.picture1{
+height: -10px;
+width: 17px;
+
+float: left;
+
+}
+.picture2{
+height: 80px;
+width:400px;
+float: right;
+
+
+}
+.picture3{
+height:80px;
+width: 60px;
+float: left;
+
+
+}
+.picture4{
+height:80px;
+width: 394px;
+float: right;
+
+
+}
+
+
+.ligne{
+    height: 2px;
+    width: 1400px;
+    background: white;
+}
+footer{
+
+    height: 350px;
+    width: 1200px;
+    background-color: darkslategrey;
+}
+
+.infos{
+    text-align: center;
+   width: 2000px;     
+    }
+
+.contact1{
+
+    float:left;
+    padding: 2px;
+}
+.contact2{
+    float: left;
+    padding: 2px;
+}
+.contact3{
+    float: right;
+}
+.A{
+    float: left;
+    width: 300px;
+}
+.B{
+    float: left; 
+    width: 300px;
+    }
+.C{
+    float: left; 
+    width: 300px;
+}
+.D{
+    float: left; 
+    width: 300px;
+}
+.clear{
+clear: both;
+}
+
+
+
