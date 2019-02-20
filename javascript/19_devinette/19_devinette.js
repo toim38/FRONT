@@ -26,7 +26,7 @@ for (var i = 1; i <= 6; i++) {
 
 
 alert("La bonne réponse est " + solution + ".");
-Réduire
+
 
 
 

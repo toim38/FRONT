@@ -1,0 +1,13 @@
+https://wikipedia.org
+https://quiksmode.org
+https://caniuse.com
+https://thenounproject.com
+svg c'est langage HTML5  C4EST DES POINTSmathematique à la difference de bitmap squi est des grilles de pixels
+FEUILLES DE STYLE DU NAVIGATEUR PAR DEFAUT
+https://www3.org/CSS2/sample.html
+on y trouve les particularitées  à retenir que le body a une margin:8px;
+les h1 à h6 et p ont des marges top et bottom
+les ul et ol ont des marges etb des padding-leftde 40px
+on utlise un reset pour annuler les differences
+le rem est=1x la valeur du font-size de la balise parent.ex:
+h1=2em patr defaut h1 est enfant de la balise body on a donné une font-size de 14px alors h1 aura une taille de 2x 14

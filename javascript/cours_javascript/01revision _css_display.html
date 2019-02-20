@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+/*modifier la taille de type pour avoir une taille de 10px*/
+font-size: 62.5%;/* ça fait 10pixels*/
+
+        }
+        body{
+margin: 0;
+font-size: 1.4rem;/*egale 14pixels*/
+font-family: Arial, Helvetica, sans-serif;
+        }
+/*1rem=1 fois la valeur de font pour la balise htlm ,on a du 16 pixels pazr defaut donc 1rem=16pixels*/
+    h1{
+        margin-bottom: 0;
+        padding: 1rem;/*10px*/
+        border: 2px crimson solid;
+        width: 300px; }
+
+/* la taille calculée de la boite du h1:-width300px;padding-left10px;padding-right:10px;border-left:2px;borderright:2px;TOTAL+324px;*/
+
+
+           
+    p{
+        width: 300px;
+          font-size: 1.3rem;
+          border: 2px gold solid;
+         margin-top: 0;}
+
+/*taille de la boite p: border-left:2px;border-right:2px;width:300px;TOTAL=304px;
+
+
+           
+
+
+
+
+
+           /* valeurs des balises courantes par defaut
+
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre   { display: block; unicode-bidi: embed }
+body            { margin: 8px }
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h4, p,
+ol              { list-style-type: decimal }
+ol ul, ul ol,
+ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }*/
+
+   article{
+border:2px solid silver;
+width: 300px;
+/*pour éviter que l'article soit +petit que 160px on utilise le min-width.
+si c'est la grandeur alors il y a max-width.
+padding: 1rem;
+margin: 0 auto;
+/*largeur calculée 324px*/
+  
+ box-sizing:border-box ; 
+/* alors là la largeur sera de 300px quelque soit les padding border,etc...*/
+
+    }
+
+h2{
+background: coral;
+width: 160px;/*à convertir en pourcentage .On fait la cible 160px divisé par le contexte (276px)x100 et ça ns donne 57.9710% */
+margin: 0 auto;/*ça c'est pour centrer */
+
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+  <!-- liste des balises display:block>body,div,h1,h2,section,nav,...
+   ces boites, elles font 100% de largeuret s'affichent les une sous les autres
+    balise inline:  a,span,label,adress,strong,em,
+  balise inline-block:img,audio,video,canvas,..
+  liste des balises display:table;:table
+liste des balises display:table-row:tr
+liste des balises display:table-cell:td--> 
+<h1>HTML</h1>
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores quas similique deleniti 
+    accusantium saepe repellat reiciendis perspiciatis! Ratione reiciendis cum blanditiis
+     natus rem officiis illum laborum optio deleniti praesentium.</P>
+<h1>CSS</h1>
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque ipsa tempora, 
+    repellendus explicabo ad quo veritatis vero dolore asperiores qui repellat.
+     Velit enim quod ratione laboriosam non, quia veritatis!</P>
+
+     <article>
+<h2>Histoire du web</h2>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+Beatae soluta delectus provident magni dignissimos rerum voluptatum ipsa quisquam enim.
+ Illo porro veniam cum, labore accusantium voluptatem eveniet! Assumenda, velit quaerat?
+     </article>
+
+</body>
+</html>
