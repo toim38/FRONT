@@ -1,0 +1,26 @@
+#header{
+background:yellow;
+height: 10vh;
+}
+.slide{
+
+    background:green;
+    height:10vh;
+    }
+    .form{
+        background: lightblue;
+        height: 10vh;    }
+        
+    .txt{
+background: orange;
+height: 10vh;
+    }
+    .chat{
+background: khaki;
+height: 10vh;
+    }
+    /*footer*/
+    footer{
+background: red;
+height: 10vh;
+    }

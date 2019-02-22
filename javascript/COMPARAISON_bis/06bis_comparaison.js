@@ -22,7 +22,7 @@ site ( les infos sont en BDD, ici dans mes variables prénom et âges)
 En cas d'echecs une alerte m'informe du probleme.
 Si tout se passe bien, un message de bienvenue m'accueille.*/
 var prenom, monAge;
-prenom = "Sandra";
+prenom = "Touhami";
 monAge = 25;
 
 // 1 -- Demander son prénom à l'utilisateur avec un prompt
