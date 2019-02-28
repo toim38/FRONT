@@ -1,5 +1,5 @@
 
-alert("js oklm !");
+/*alert("js oklm !");
 
 /*javascript fournit 3 operat°permettant de comparer des valeurs:
 => l'égalité (ou identité ou <<triple egal>>)utlisant"===",
@@ -13,9 +13,10 @@ console.log(nb1==nb2);//retourner TRUE.
 //OPERATEUR DE COMPARAISON===signifie strictement egal à
 //ilpermet de verifier la valeur et le type
 //l'operateur ! signifie different en valeur 
-console.log(nb1 != nb2);//retourner FALSE strictement different
+console.log(nb1 != nb2);
 
 // operateur!==
+//retourner FALSE strictement different
 console.log(nb1!== nb2);//retourner FALSE
 
 

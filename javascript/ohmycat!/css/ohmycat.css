@@ -1,0 +1,41 @@
+/*REglages generaux   */
+.container-fluid{
+    padding: 0;
+}
+nav{
+    background: #000;
+    color: aliceblue;
+    text-align: center;
+}
+header{
+    background: brown;
+    height: 10rem;
+    background-image:url(images/background.jpg) ;
+    text-align: center;
+}
+
+#slider{
+    background:green;
+    /* height: 5rem; */
+    
+    float:right;
+}
+
+#txt{
+    background: purple;
+    height: 5rem; 
+}
+
+#form{
+  background: gray;  
+ /* height: 45rem;
+  width: 30rem;*/
+  
+#cat{
+background: yellow;
+/* height: 35rem; */
+}
+footer{
+    background: blue;
+    height:3rem;
+}

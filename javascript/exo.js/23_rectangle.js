@@ -20,7 +20,7 @@ rectangle.classlist.toggle('good');
 }
 /*3- A l'entrée du survol du rectangle */
 function auSurVolSourisRectangle(){
-    rectangle.cklasslist.add('important');
+    rectangle.classlist.add('important');
 }
 /*a la sortie du sur vol du rectangle
 la methode .remove() va ajouter la cloass css.*/

@@ -1,0 +1,31 @@
+/* reglages  */
+#nav{
+    background: green;
+    height:10rem;
+
+}
+#header{
+    background: brown;
+    height: 10rem;
+}
+#form{
+    background: gray;
+    height: 10rem;
+}
+#slide{
+    background: black;
+    height: 10rem;
+
+}
+#footer{
+    background: yellow;
+    height: 10rem;
+}
+#texte{
+    background: red;
+    height: 10rem;
+}
+#logo{
+    background: aqua;
+    height: 10rem;
+}
