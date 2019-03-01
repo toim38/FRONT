@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>change</title>
+</head>
+<body>
+ <button>Change la couleur de fond</button> 
+ 
+ 
+ <script>
+ //EXERCICE
+ //faire une fonction nommée changeBg qui contient 1 seul instruction:alert("OK!")
+ var btn=document.querySelector('button');
+ function changeBg(){
+    //alerte('ok !');
+document.body.style.backgroundColor='hsla('+ random(360) +',92%,51,53%)';
+ }
+     btn.addEventListener('click',changeBg);
+
+
+ </script>
+</body>
+</html>

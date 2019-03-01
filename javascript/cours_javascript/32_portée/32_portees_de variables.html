@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portée de variable</title>
+</head>
+<body>
+ <p>on va créer 2 fonctions a et b,et 3 variables x,y et z 2 d'entre elles sera definit à l'interieur de la fonction et les autres definientds la portée globale</p>
+ <p>on aura une 3eme fonction appelée sortie qui prend un seul parametre et qui le renvoit ds un paragraphe de la page</p>
+<script>
+
+//ETAPE A
+var x=1;
+//variable "x" est la portée globale
+function a(){
+    var y=2;
+}
+//la variable y et z sont ds les portées locales elles sont ds la fonction
+function b(){
+    var z =3;
+}
+
+function sortie(valeur){
+    //créer le noeud p qui est 1 objet du document
+var para =document.createElement('p');//ajoute ce node comme enfant de la balise body
+document.body.appendChild(para);
+
+//créer le node du texte qui est le contenu du texte de la balise p avec la methodetextContent.(on pourra aussi utiliser innerHtml)
+para.textContent='la valeur est:'+ valeur;
+}
+//invocation de la fonction sortie en lui envoyant l'argument x
+sortie(x);
+
+//comme est ds la portée globale on y a acces,le §créer par, la fonction affiche bien la valeur 1 de x. Vous devez normalement voir la valeur de la variable x
+
+//sortie(y);
+//sortie(z);
+//ces sorties renvoient 1 message d'erreur du type Reference Error.A cause de laz portée de la fonction y et z sont enfermés ds les fonctions a() et b() 
+//donc la fonction sortie ne peut pas les atteindre  qd elles sont appelées depuis
+</script>
+   
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <h1>la porté des fonctions et des conflits</h1> 
+<p>la porté est importante en js qd on a faire à des fonctions,qd on créer une fonction les varables et autre qui sont defini à l'interieurde la fonction ont leur propre porté</p>
+<p>càd qu'elles sont enfermé ds leur propre comportiment séparé et qu'elle ne peuvent pas être affecté à d'autre fonctions</p>
+<p>ou par le code en dehors de la fonction(metaphore du zo,chaque animal a son propre enclos</p>
+<p>le + haut niveau en dehors de toutes vos fonction est appelé porté globale.là les valeurs sont accessible de n'importe quelle partie du code</p>
+<p>js est construiot comme pr raison de securité etb d'organisation<br></p>
+<p>il peut y avoir des conflits qd un script externe à notre fonction sont appelés</p>
+<p>exemple :on a un fichier html qui appelle 2 fichiers javascript externe et que les 2 ont une variable et une fonctiondefini qui utilise le même nom</p>
+
+<script src="script2.js"></script>
+<script src="script1.js"></script>
+<script>
+//on invoque la fonction ditSalut()qui peut-être aussi bien definitds 1 script interbne qu'externe
+ditSalut();//ce sont les parentheses qui executenyt, la fonction
+</script>
+</body>
+</html>

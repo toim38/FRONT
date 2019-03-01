@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>fonctions imbriquées</h1>
+    <p>on peut appeler une fonction de n'importe ou même à l'intérieur d'une autre fonction</p>
+    <p>les fonctions imbriquéesz sont souvent utilisées comme moyen de garder du code bien organisé</p>
+    <p>une grande fonction complexe est + facile à gérer qd elle est divisé en sous fonction</p>
+    <p></p>
+    <script>
+        //ETAPE A ON VA FAIRE UNE META FONCTION qui imbrique plusieurs sous fonction
+        function maMetaFonction() {
+            var maVariable = 1;
+            sousFonction1(maVariable);
+            sousFonction2(maVariable);
+            sousFonction3(maVariable);
+        }//FIN DE LA META FONCTION
+
+        function sousFonction1(valeur){
+            document.write(valeur);
+        }
+        function sousFonction2(valeur){
+            document.write(valeur);
+        }
+        function sousFonction3(valeur){
+            document.write(valeur);
+        }
+
+        //là on déclenche
+        maMetaFonction();
+        //ici ns avons bien accés à la variable maVariable car on a passé sa valeur ds la metaFonction et les sous fonctions en temps que paramétre
+    //il faut verifier que les valeurs de variable utilisé ds la fonction ont 1 portée correcte
+    //l'exem^ple au dessus il ya erreur car même si la valeur de maVariableest defini ds le même porté que les appels de, fonction
+    //elle n'eszt pas definie ds la declaration de fonction(le code réel qui est executé qd les fonctions sont appele)
+    //pr que ça marche il faut passer la valeur ds la fonctioonen tant que paramétre.cf33b
+    </script>
+</body>
+
+</html>

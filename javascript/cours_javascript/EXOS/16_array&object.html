@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array&object</title>
+</head>
+<body>
+  <script>
+    var monTableau =['fraise','pomme','poire'];
+    //le type estt un objet
+    console.log(typeof monTableau);
+
+    //le type du constructeur estt un Array=un tableau
+    if(monTableau.constructor.name=='Array'){
+        console.log('Array');
+    }
+    
+    //pr recuperer une info stockée ds 1 tableau,on va utiliser un index(1 clé)de tableau
+    console.log(monTableau[1]);
+    //ds les objets on compte tjrs en commençant par zero
+    //l'index de fraise c'est 0
+    //l'index de orange c'est 1
+
+
+    //créer un tableau associatif/un dictionaire
+    frigot = {
+        "fruits":["ananas","mangue","papaye"],
+        "legumes":["poireau","courgettes"],
+        "laitage":["yaourt","lait"]
+        }
+console.log(frigo.legumes[1]);
+mesFruits=frigot.fruits;
+console.log(mesFruits);//autre façon de recduperer la liste des legumes
+
+mesLegumes=frigo["legumes"];
+console.log(mesLegumes);
+
+
+      traduc ={
+        "fraise":"strawberry",
+         "pomme" :"apple",
+         "poire": "pear"
+    }
+    
+   console.log(traduc.pomme);
+   //pr recupere 1info ds 1 dico on utlise des mots clés
+
+    console.log(traduc.poire);
+    console.log(traduc.fraise);
+    
+    
+    </script>  
+</body>
+</html>

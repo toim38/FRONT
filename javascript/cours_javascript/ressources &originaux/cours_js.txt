@@ -1,0 +1,7 @@
+-------------------------variables ------------------------------------
+une variable est unb conteneur,une boite permettant de stocker des vaaleurs.
+au début on declare la variable avec un mot clé"var" on le fait suivre du nom de la variable.
+on lui assigne une valeur avec l'operateur d'assignation"="
+Exemple a=4; ou var a=4;et il existe aussi "let" pour "var" avec ES6.
+d=10;
+plus tard ds le script  d=8;  on vient de reasigner la variable "d" avec new valeur

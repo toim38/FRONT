@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Type de Données</title>
+</head>
+<body>
+ <script>
+    var maVariable = 10;
+    console.log(typeof maVariable);
+    console.log(isNaN(100));//renvoit false
+    console.log(isNaN("100"));//la chaine 100 est convertie par le navigateur avant d'être testé,c'est FALSE
+    console.log(isNaN('abc100'));//renvoit true
+
+
+
+    var monTexte = 'Soleil';
+    console.log(typeof monTexte);//isNaN signifie is not number
+    var monBooleen = true;
+     console.log(typeof monBooleen);
+     var maListe =['pomme', 'poire', 'orange',20];
+     console.log(typeof maListe);
+
+     //structure du test "if" en français se serait:Si (une condition est vraie ou fausse{alors fait ça ,ou alors ça})tt ça c'est du pseudo-code algorithmique
+     //en javascript  si le nom du constructeur est egal Array alors  affiche en console'Array'
+if(maListe.constructor.name=='Array'){
+    console.log('Array');//Array veut dire tableau de donnees
+}
+
+    
+    </script>   
+</body>
+</html>

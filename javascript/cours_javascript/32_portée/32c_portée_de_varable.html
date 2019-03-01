@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portée de variable</title>
+</head>
+<body>
+   
+    que se passe-t-il si les variables sont appelées de l'intérieur de la fonction
+</p>
+<!--ETAPE C-->
+<script>
+    function a() {
+        var y = 2;
+        sortie(y);
+    }
+
+
+
+    function b() {
+        var z = 3;
+        sortie(z);
+    }
+
+    function sortie(valeur) {
+        //créer le noeud p qui est 1 objet du document
+        var para = document.createElement('p');//ajoute ce node comme enfant de la balise body
+        document.body.appendChild(para);
+
+        //créer le node du texte qui est le contenu du texte de la balise p avec la methodetextContent.(on pourra aussi utiliser innerHtml)
+        para.textContent = 'la valeur est:' + valeur;
+    }
+    sortie(x);
+    a();
+    b(); 
+//les 2 fonctions a)( et b( ) appelé doivent renvoyer la valeur x(qui est 1).ça marche car même si la fonction sortie() n'est pas ds la même portée
+//que celle ds laquelle x est definit
+</script>
+</body>
+</html>

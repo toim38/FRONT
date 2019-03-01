@@ -11,10 +11,11 @@
 #form{
     background: gray;
     height: 10rem;
+   
 }
 #slide{
     background: black;
-    height: 10rem;
+    height: 5rem;
 
 }
 #footer{
@@ -24,6 +25,7 @@
 #texte{
     background: red;
     height: 10rem;
+    
 }
 #logo{
     background: aqua;

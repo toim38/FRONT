@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exo while avec break</title>
+</head>
+<body>
+ <h1>exo prenom avec while</h1>
+<p>ici on demande à lo'internaute son prenom et celui des freres et soeurs</p>
+<p>on va afficher une boite dialogue avec la methode prompt()pour chaque prenom,comment savoir combien il y aura de
+    freres et desoeurs</p>
+<p>ns allons utiliser une boucle while qui va demander,à chaque passage ds la boucle,un prenom supplémentaire</p><br>
+<p>la boucle ne s'arretera que lorsque l'utilisateur choisira de ne plus entrer de prenom</p>
+<script>
+    var prenoms = '',
+        prenom,
+        proceed = true;
+    //on a là une boucle infinie puisque la condition est tjrs vraie,la boucle continue de tourner puisque proceed est n'est pas false ,le navigateur azffiche prompt sans cesse
+    //c'est la boucle infinie
+    /*while(proceed ){
+        prenom=prompt('entrer un prenom');
+    }
+    alerte(prenom);*/
+
+
+    while (proceed) {
+        prenom = prompt('entrer un prenom');//si l'utilisateur rentre un prenomds le pro^pt,on ajoute cde prenom ds le tableau prenoms
+        //sinon on sort de la boucle on mettant la variable proceed à false
+        if (prenom) {
+
+            prenoms += prenom + '';
+        } else {
+           break;//puisqu'aucun prenomn'a été entré,on fait un break qui ns fait sortir du 'if' donc de la boucle
+
+        }//fin du else
+
+    }//fin de, la bopucle
+
+    document.write(prenoms);//affiche les prenoms l'un apres l'autre
+
+</script>  
+</body>
+</html>

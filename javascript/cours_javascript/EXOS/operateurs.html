@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operateurs</title>
+    <style>
+    body{
+font-weight: bold;
+color: blue;
+        font-size: 2rem;
+    }
+    
+    
+    </style>
+</head>
+<body>
+  <script>
+   var operation1=1+2;
+   document.write(operation1 + "<br>"); 
+   maChaine="je m'appelle"+ " Touhami";
+   document.write(maChaine+"<br>");
+   var operation2=2+3+*5;
+   document.write(operation2+"<br>")
+   //la precedence des operations ,ici la * avt l'+
+    
+    var operation3 (2+3)*5;
+    document.write(operation3+"<br>")
+//le modulo,"%" 
+var operation4=10%2;
+document.write(operation4+"<br>");
+//renvoit 0 car il n'ya pas de reste ds la "%"10/2=5
+//là c'est operateur de comparaison,renvoit les booléens true ou false
+//signe===:egalité stricte,la valeur et le type (la chaine) sont egaux ou pas
+var monVehicule1="voiture";
+    var monVehicule2="camion";
+    document.write(monVehicule2==="velo")+"<br>";
+    monChiffre20="20";
+    //ici on a la valeur 20 et de la chaine de caractere les 2 cas,valeur20et string=>true
+    document.write(monChiffre==="20")+"<br>";
+
+//ici on a la valeur 20 et ds la variable une chaine on demande si la variable monChiffre vaut 20 ET est un number
+ //la console renvoit false car ds la variable monChiffre on a bien la valeur 20ms pas number
+//operateu d'egalité ne teste que l a valeur même si le type est different le navigateur renverra true
+document.write(monChiffre==20) +"<br>";
+//renvoit true 
+//operateur de difference(not)
+//!=NON EGAL est differnt de !==NON
+//!=NON
+var unChiffre =3;
+document.write(unChiffre !=2)+"<br>";
+/:une autre façon d'ecrire not
+var unDernierChiffre=4;
+document.write(!(unDernierChiffre===4));
+
+
+
+
+
+    </script>  
+</body>
+</html>

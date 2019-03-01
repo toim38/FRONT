@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>creer message perso</title>
+    <style>
+        body {
+            background: palevioletred;
+        }
+
+        .msgBox {
+            background-color: rgb(194, 47, 47);
+            width: 242px;
+            /* height: 242px; temporaire tant qu'on a rien dans la boite */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* permet de parfaitement centrer notre div dans le body */
+            background-image: url('image/warning.png');
+            background-repeat: no-repeat;
+
+        }
+
+        .msgBox p {
+            /* background-color: pink; */
+
+            padding: 10px 20px;
+            /* en haut et en bas 10px, gauche et droite 20px; */
+        }
+
+        .msgBox button {
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  - On retire la div car on va la générer dynamiquement en javascript
+
+   
+        <div class="msgBox">
+            <p>Message</p>
+            <button>X</button>
+
+        </div>   -->
+
+    <button id="btnAfficheDialogue">Affiche la boite de dialogue</button>
+
+
+    <script>
+
+        /* Si le msgType à la valeur 'warning', alors l'icone warning sera affichée comme background-image du msg, et le panel prendra la couleur d'arrière plan rouge.
+        Sinon, le msgType à la valeur 'chat', alors l'icone chat sera affichée et le panel prendra la couleur d'arrière-plan bleu turquoise.
+        Si le paramètre msgType n'a pas de valeur du tout, alors,le paragraphe prendra un padding par défaut et il n'y aura ni icône ni couleur d'arrière-plan.*/
+
+        // 1ère étape: construisez les IF avec les instructions suivantes:
+        // SI(le msgType a la valeur 'warning')
+        // ALORS
+        // on affiche alert("ATTENTION')
+        // Sinon si (le msgType à la valeur de 'chat)
+        // ALORS
+        // on affiche alert ('chat')
+        // SINON
+        // on affiche alert('chat')
+        // Sinon 
+        // on affiche alert('rien')
+
+        // étape 1 : pour tester le paramètre msgType
+
+        //    if(msgType === 'warning'){
+        //        alert('ATTENTION');
+        //    }
+        //    else if(msgTytpe === 'chat'){
+        //        alert('Chat');
+        //    }
+        //    else{
+        //        alert('Rien');
+        //    }
+
+
+        //2ème étape : modifier le background-image du msg et la couleur de fond du panel
+
+
+
+
+        var btnOpenBox = document.getElementById('btnAfficheDialogue');
+
+        function afficheMessage() {
+            // dans une variable nommee body,on sélectionne la balise body dans le DOM
+            var body = document.querySelector('body');
+            // dans une variable BoiteDialogue,on créer un élement div avec la méthode createElement()
+            var boiteDialogue = document.createElement('div');
+            // ajouter à cette boiteDialogue l'attribut class = "msgBox" avec la méthode setAttribute('nomdel'attribut', 'nouvellevaleur')
+
+            /*    Les deux paramètres attendus par setAttribute
+            1 - nom de l'attribut : on mettra class
+            2- nouvelle valeur : on mettra msgBox    */
+            boiteDialogue.setAttribute('class', 'msgBox');
+            body.appendChild(boiteDialogue); // on créer un enfant, dans le DOM
+
+            // créer une variable pMessage qui créer un objet paragraphe
+            var pMessage = document.createElement('p');
+
+            // Ajouter à cet objet pMessage le contenu texte suivant : 'je suis une boite de dialogue' avec la methode textContent
+            pMessage.textContent = "Je suis une boite de dialogue";
+
+            // donner a la boiteDialogue un enfant pMessage avec la méthode appendChild
+            boiteDialogue.appendChild(pMessage);
+
+            // Creer une variable closeBtn qui contient un nouvel objet virtuel button
+            var closeBtn = document.createElement('button');
+            // Ajouter à ce nouvel objet le contenu texte x
+            closeBtn.textContent = "x";
+            // Donner à l'objet boiteDialogue cet enfant closeBtn
+            boiteDialogue.appendChild(closeBtn);
+
+
+            closeBtn.addEventListener('click', function () {
+                // Au clic sur le bouton X, Fermeture de la boite de dialogue
+                boiteDialogue.parentNode.removeChild(boiteDialogue);
+
+            })
+
+        }// Fin de la FONCTION afficheMessage
+
+        var btnOpenBox = document.querySelector('button');
+
+        // 3/
+
+
+
+        btnOpenBox.addEventListener('click', afficheMessage);
+
+
+
+
+    </script>
+</body>
+
+</html>
