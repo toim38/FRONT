@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scroll_event</title>
+    <style>
+    .maDiv{
+        background: burlywood;
+        padding: 1rem;
+        width: 300px;
+        height: 200px;
+        overflow:auto;/*affiche l'ascenceur là ou il y a besoin*/
+    }
+    /*overflow:hidden cache le contenu qui deborde
+    overflow:scroll;cache le contenu ms ajoute des barres d'ascenceur verticales et horizontales*/
+    
+    
+    </style>
+</head>
+<body>
+ <section><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt ab dicta, qui inventore repellendus
+      reprehenderit tenetur hic quibusdam. Voluptate minima deserunt voluptas,
+      consequatur nisi veniam nam voluptatibus placeat architecto.
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis consequatur,
+      optio velit nulla magnam harum iusto amet modi illum quod fugiat sed 
+     delectus aperiam vitae dolore sequi maxime quasi sit!Lorem</p>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Commodi impedit id fugiat in, dolorem dolor veritatis quasi, quia doloremque, 
+     et dicta reprehenderit architecto unde odit quibusdam? Deserunt doloribus dolorem repellendus?</p>
+<div class="maDiv"><p>ipsum dolor sit, amet consectetur adipisicing elit. Vel, 
+    nulla possimus quaerat quisquam fuga laborum! Sequi repudiandae iusto vitae veniam, 
+    eveniet corrupti minus dolorem ex id inventore ut, officiis veritatis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Iste fuga expedita inventore suscipit aperiam, temporibus, illum accusantium id ad explicabo, dolore modi? 
+    Nesciunt reprehenderit dolor itaque dolores, nihil autem ullam.</p> 
+</div>
+
+
+
+
+ </section> 
+ <script src="js/jquery-3.3.1.min.js"></script>  
+ *<script>
+ $(function(){
+     console.log('jquery chargé');
+
+
+
+
+
+     $(window).scroll(function(){
+         console.log('utilisation de la roulette ds le document');
+         var largeur=$(window).width();
+         console.log(largeur);
+         var hauteur=$(window).heigth();
+         console.log(hauteur);
+     })
+ })
+ </script>
+</body>
+</html>

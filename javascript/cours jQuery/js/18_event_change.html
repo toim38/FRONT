@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>Faire un form avec 1 menu deroulant(balise select)qui contient plusieurs balises option</p>        
+    
+        
+    <form action="# ">
+        <label for="animaux">selectionne ton animal fétiche</label><br>
+<select name="animaux" id="animaux">
+<option value="boa">boa</option>
+<option value="baleine">baleine</option>
+<option value="bison">bison</option>
+
+
+
+</select>
+</form>
+ <script src="/js/jquery-3.3.1.min.js"></script>
+ <script>
+ $(function(){
+     console.log('jquery chargé');
+ 
+$('select#animaux').change(function(){
+    $('.info').html('ton animal préféré est : '+$(this).val());
+})
+})
+ </script>   
+</body>
+</html>

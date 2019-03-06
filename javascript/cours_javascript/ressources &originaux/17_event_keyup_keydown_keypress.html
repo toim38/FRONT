@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <form action="#">
+
+<textarea name="" id="cible" cols="30" rows="10">
+
+</textarea>
+   </form>
+    <p class="info"></p>
+    <span class="testkey"></span>
+   <script src="../js/jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+    console.log('jquery chargé');
+})
+$('#cible').keydown(function(){
+    $('.testkey').css('background-color','green');
+
+})//fin du keydown sur cible
+
+$('#cible').keyup(function(){
+    $(this).css('background-color','gold');
+})//fin keyup
+//lors du keypress,on affiche le keycode de la touche ds le § info
+$('#cible').keypress(function(ev){
+    $('.info').text(ev.which);
+})
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

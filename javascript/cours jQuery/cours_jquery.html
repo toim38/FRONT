@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <h1>jquery 1 lib js pr gagner en productivité<br>
+    "write less Do more"</h1>
+    <h2>version actuelle v3.3.1</h2>
+    <p>JQuery c'est 1 bibliotheque javascript,1 framework,c'est 1 boite à outil de bliocs ré-utilisable;petite,rapide et legere
+    riche en fonctionalité</p>
+<p>elle simplifie bcp la navigation et manipulationds le DOM des pagesHTML la gestion des evenements animationet AZJA1X grace à 1 API </p>
+   <p> facile à utiliser .bcp tester sur 1 multitudes de navigateur
+    JQuery est ellemême codée en javascript</p>
+    <p>polyvalence et extensibilité ça a changer pr le travail des developpeurs</p>
+    <ul>
+<li>fonction toute faites ,optimisées qu'on utilise svt:appel AJAX,boucles,etc...</li>
+<li>résoud bcp de pb de compatibilité de navigateur</li>
+<li>JQuery A DES POLYFILLS INTEGéS</li>
+<li>on a 1 lecture de code + simple car les pb sont gérés par la lib</li>
+    </ul>
+    <p>attention si le code est mauvais JQuery ne pourra rien(Tag Soup)</p>
+    <h2>JQuery a des millions de plugins additionels</h2>
+    <h3>JQuery UI/User Interface,actuellement UI 1.12</h3>
+<p>c'est 1 ensemble d'interface utilisateurs d'effets de widgets conçu à partir de la lib</p>
+<p>si on abesoin d'1 selecteur de date ds 1 formulaireJQueryUIest  un choix idéal</p>
+<h3>JQuery Mobile version 1.4.5:c'est 1 framework d'interface utlisateur optimisé pr les ecrans tactils</h3>
+<h1>charger jQuery ds 1 page</h1>
+<p>la mehtode  consiste à telecharger la lib jQuery sur le site officiel</p>
+<p>prendre le 1er lien de download(download the compressed 3.3.1)</p>
+<p>faire click droit sur le lien et choisir enregistrer la cible du lien : il faut l'enregistrer(jquery-3.3.1) ds le dossier que vs aurez à la racine</p>
+<p>>on créer le scop jquery qui recevra tout le code
+$(function{
+on teste si jquery est bien chargé
+console.log('jquery est bien chargé)test essentiel</p>
+})
+selectioner en jquery
+<p>
+    le coeur de jquery se trouve ds la seklection d'elementspr ensuite executer des methodes
+</p>
+$(selecteur)accepte en argument tout selecteurs css,ensuite jquery ns renvoie une collectionb d'1 ou plusieurs elements DOM enveloppé
+ds 1 objet jquery
+<p>
+$('div') select° ts les divs
+$('.titre')selectione tous les elements qui ont la class titre 
+<p>
+cette enveloppe jquery est celle qui donne acces àn ttes les fonctionalitéde jquery
+</p>
+<ul>
+<li>rajouter des classes</li>
+<li>modifier le contenuHTML</li>
+<li>AFFICHER OU CACHER LES ELEMENTS</li>
+<li>animer etc...</li>
+</ul>
+</p>
+<p>ts les elements selectiçonés en javascript pur (document.getElementById,querySelecrtoretc etc</p>
+sont des elements DOM et ts ceux selectionnée avec $('..') sont des elements DOM ds une enveloppe jquery</p>
+
+<h3>jQuery dispos"e de plusieurs methode pour parcourrir l'arbre du doc le DOM
+    </h3>
+<ul>
+<li>children() parcourt les enfants</li>
+<li>find() parcourt les descendants<li>
+<li>prev() envoit le voisin precedent</li>
+<li>next () renvoit le voisin suivant</li>
+<li>parent() renvoit le parent</li>
+<li>eq() renvoit parmi une liste d'elements celui qui se trouve à l'index fourni</li>
+</ul>
+<h2>les nduetters et les setters</h2>
+<ul>
+<li>addclass:ajoute 1 class</li>
+<li>remove class:retire 1 class</li>
+<li>toggleclass:interrupteur ajout/retire</li>
+<li>hasclass:tester l'existance d'une class</li>
+<li>is()tester si on plusieurs class</li>
+</ul>
+<p>$('#pierre').removeClass('vert grand').addClass('rouge petit');</p>
+
+<h2>Les evenements</h2>
+<p>la plupart des interact°de l'utilisateur avec la page web peuvent être interceptées est 1 act°  lancée en retour</p>
+<p>on peut dire à 1 fonct° de s'executer qd l'utilisateur clique ou scroll ou   autre</p>
+<ul>
+<li>mouse (la souiris):<br>
+click: au_ clique sur l'element
+mousenter:qd la souris passe dessus
+mouseleave:qd la souris sort de la zone
+</li>
+<li>
+keyboard<br>
+keydown:une touche est pressée
+keyup:touche relachée
+</li>
+<li>
+window(fenetre de navigat°)
+scroll:defilement de la fenetre
+resize:redimentionner la fenetre</li>
+<li>
+form:formulaire
+change:pr les input,select et textarea qd l'utilisateur change 1 de leur valeur
+focus et blur:qd la souris est ds le input ou sort du input
+submit:à l'envoit du formulaire 
+</li>
+<li>document(le contenu DOM)
+DOMContentLoaded:lancé qd le docu HTML est complétement chargé et analysé ss attendre les images ou css
+</li>
+</ul>
+
+
+
+
+
+
+<pre><script src="chemin relatif vers notre fichier jQuery.js">
+"hhtps://jquery.com/download"
+</script></pre>
+
+
+</body>
+</html>

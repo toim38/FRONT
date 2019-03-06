@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chainage</title>
+
+<style>
+.vert{
+color:green;
+
+}
+.rouge{
+color: red;
+}
+.petit{
+    font-size: 0.8em;
+}
+.grand{
+    font-size:2 em;
+}
+div{
+    background: gray;
+}
+.pJaune{
+
+    background: yellow;
+}
+
+
+</style>
+
+</head>
+<body>
+ <p id="pierre"class="grand vert">Pierre</p> 
+<p id="jean"class="petit rouge">Jean</p>
+
+
+<div>Ma Div</div>
+<article>
+Mon super article
+</article>
+ <p class="pJaune">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Dolor eum amet odit sit quae in? Veritatis repellendus commodi quaerat dicta sequi cum totam,
+       fugiat,
+      illum a quis ab, doloribus iste.</p>
+
+
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <script>
+ $(function(){
+console.log('jquery est chargé');
+//$('#pierre').removeClass('vert').addClass('rouge').removeClass('grand').addClass('petit');
+//faire l'instruction suivante au click sur pierre
+//$('#pierre').removeClass('vert grand').addClass('rouge petit');
+ 
+ 
+ /*coreect°*/
+ $('#pierre').click(function(){
+     $(this).removeClass('vert grand').addClass('rouge petit');
+ })
+ $('#jean').click(function(){
+/*si jean a la class rouge ,on fait 1 alert "jean est rouge"
+sinon on a "jean n'est pas rouge"*/
+if($(this).hasClass('rouge'))
+alert('jean est rouge');
+else
+alert('jean n est pas rouge');
+ })
+//methode hide permet de caché 1 element ,c'est 1 animation
+//à la fin du hide on mettra 1 alert
+$('div').hide(2000,function(){
+    $('article').hide(1000).css("color","coral").delay(2000).show(500);
+})
+
+//aprés que la div est disparu on faitb un callback(qui s'execute qd l'act° est  terminé)
+//on cache l'article ds cette fonction
+//on lui donne la propriete css color
+//l'article reapparait avec un show(500),durée de l'apparition1 s
+//apres le hide du div on affiche une alert('fin du hidedu div')
+$('div').hide(2000,function(){
+    $('article').hide(1000).css("color","coral").delay(2000).show(500);
+    alert('fin du hide');
+
+});
+
+$('.pJaune').fadeOut("slow",function(){
+    $(this).fadeIn(2000,function(){
+        alert('fin du fadeIn de pJaune');
+    });//encore 1 callBack qui s'exercute qd le fadeIn est terminé
+});
+
+
+})//FIN DU SCOPE
+
+
+ </script>
+
+
+
+
+
+</body>
+</html>

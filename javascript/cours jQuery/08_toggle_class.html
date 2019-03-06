@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>avec transition</title>
+    <style>
+        .listeFruits {
+            
+            background-color: firebrick;
+            transform: scale(0);
+            transform-origin: 0 0;
+            transition: 5s;
+        }
+    
+        .affiche {
+           transform: scale(1);
+        }
+    </style>
+    <body>
+        <!--Ajouter 1 balise btn et sa class="btn" et listeFruits
+          charger jquery et afficher jquery chargé en console
+            créer la fonction afficheMasque( )qui sera executé au click sur btn
+             cette fonction fait 1 toggleClass avec la class affiche sur listeFruit-->
+    
+        <button class="btn">
+            Affiche et masque la liste
+        </button>
+    
+        <ul class="listeFruits">
+            <li>pomme</li>
+            <li>poire</li>
+            <li>fraise</li>
+            <li>kiwi</li>
+        </ul>
+
+
+
+    
+    </head>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            console.log('jquery est bien chargé');
+        })
+        $('.btn').on('click', function () {
+        $('.listeFruits').toggleClass('affiche');
+        })
+
+    </script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recup valeur</title>
+<style>
+*{box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+}
+html,body{
+padding:0;
+height: 100%;
+margin: 0;
+
+
+
+}
+body,input,textarea{
+    font: 1.3rem/1.5 arial,helvetica,sans serif
+}
+#monForm{
+    width: 40%;
+    background: blanchedalmond;
+    padding: 2rem;
+}
+#monForm fieldset{
+    border: 1px dashed silver;
+    border-radius:1rem;
+    box-shadow:0 0 3px rgba(0,0,0,.25)
+}
+#monForm fieldset legend{
+    background:blanchedalmond ;
+    padding: 1rem;
+}
+#monForm input,#monForm textarea{
+    width: 100%;
+    margin: 5px 0;
+}
+#monForm p{
+margin-top: .5rem;
+margin-bottom:  0;
+}
+.feedback{
+width: 70%;
+border: 1px silver solid;
+padding: 2rem;
+border-radius: 1rem;
+margin: 0;
+box-shadow:0 0 10px rgba(0,0,0,.25);
+transform: translate(50% 50%);
+top: 50%;
+left: 50%;
+
+}
+</style>
+
+
+
+</head>
+<body>
+   <form action="traitement.php" method="GET" id="monForm">
+<fieldset>
+<legend>Mes infos perso</legend>
+<p>
+<label for="nomComplet">Nom et Prenom</label><br>
+<input type="text" id="nomComplet" placeholder="nom et prenom">
+</p>
+<!--1:créer un input de type email avec l'id email-->
+    <form action="/action_page.php">
+  E-mail: <input type="email" name="emailaddress">
+  <input type="submit">
+
+<!--2:un input de type tel-->
+Telephone: <input type="tel" name="usrtel"><br>
+<input type="submit">
+<!--3:un input de type texte avec l'id du sujet-->
+First name: <input type="text" name="FirstName" value="Mickey"><br>
+Last name: <input type="text" name="LastName" value="Mouse"><br>
+<input type="submit" value="Submit">
+<!--3:créer un texarea avec kl'id message-->
+<textarea name="" id="message" cols="30" rows="10"
+input type="submit" value="envoyer mon message">
+</textarea>
+<!--4créer un  bouton submit avec la valeur envoyer mon message-->
+
+
+
+
+
+
+
+-->
+
+</fieldset>
+   </form> 
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+
+//5: avec jquery afficher à l'utilisateur un recapitulatif contenant ttes les valeurs du formulaire
+        //(des p affichés l'uns aprés les autres ds body-->
+           //correction
+//ecouter l'evenement submit du formulaire
+$(function () {
+                console.log('jquery chargé');
+                $('monForm').on('submit', function (ev) {
+                    ev.preventDefaut();
+//recuperer les info ds des variables
+var nomComplet=$('#nomComplet').val();
+$(this).replaceWith(
+    //là on met apostrophe inversée altGr+7
+`<p class="feedback">
+bonjour<strong> ${nomComplet}</strong>
+</p>
+
+)
+
+
+
+                }
+}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

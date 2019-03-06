@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chainage</title>
+    <style>
+        .vert {
+            color: green;
+        }
+
+        .rouge {
+            color: red;
+        }
+
+        .grand {
+            font-size: 2em;
+        }
+
+        .petit {
+            font-size: .8em;
+        }
+
+        div {
+            background: cornflowerblue;
+        }
+
+        .pJaune {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="pierre" class="grand vert">Pierre</p>
+    <p id="jean" class="petit rouge">Jean</p>
+    <div>Ma Div</div>
+    <article>Mon Super Article</article>
+    <p class="pJaune">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam enim, debitis rerum similique
+        magnam animi quasi obcaecati et sequi optio rem quae quo amet tempora dolores dignissimos cumque. Hic,
+        reiciendis.</p>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(function () {
+
+            console.log('jQuery est bien chargé');
+
+            /* méthode:
+            $('#pierre').removeClass('vert).addClass('rouge).removeClass('grand).addClass('petit');
+                */
+            // méthode la plus rapide de chainage: 
+            // $('#pierre').removeClass('vert grand').addClass('rouge petit');
+
+            // faire l'instruction suivant au clic sur pierre
+
+            $('#pierre').on('click', function () {
+                // Autre solution $('#pierre').click(function(){    
+
+                $('#pierre').removeClass('vert grand').addClass('rouge petit');
+            })
+
+            $('#jean').click(function () {
+
+                // SI #jean a la class rouge, alors on fait une alerte qui affiche 'jean est rouge'
+                // SINON on fait une laerte qui affiche 'jean n'est pas rouge'
+
+                if ($(this).hasClass('rouge'))
+                    alert('Jean est rouge');
+
+                else alert('Jean n\'est pas rouge'); // '\' est primordial qd on fait des guillemets simple,sinon on peut mettre des guillemets doubles.
+
+            })
+
+            /* la méthode hide() permet de cacher un élément
+            - C'est une animation
+            - S'applique sur tout les éléments ciblés avec le selecteur
+            - A la fin du hide() on mettra une alert ('fin du hide')
+            */
+
+            /* Ici le div disparait en 2 secondes
+            1/ Une fois que sa disparition est terminée, on déclenche ue fonction de callback (qui s'éxécute qd l'action est terminée).
+            2/ Dans cette fonction on cache l'article (durée de disparition de 1 seconde = 1000 millisecondes)
+            3/ on lui donne la propriété css color de valeur coral (couleur orange)
+            4/ on attend 2 secondes (delay(2000))
+            5/ on fait réapparaitre l'article avec un show(500), durée de l'apparition  (une demi seconde)
+            6/ Après le hide du div on affiche une alert('fin du hide du div)
+            */
+            $('div').hide(2000, function () {
+                // 2000ms = 2s
+
+
+                $('article').hide(1000).css("color", "coral").delay(2000).show(500);
+
+            }); // fin du hide
+            console.log('fin du hide');
+
+            $('.pJaune').fadeOut("slow", function () {
+                // ajouter une fonction de callBack qui sera éxécuter une fois que la fonction de fadeOut sera terminée.
+                $(this).fadeIn(2000, function () {
+                    // encore un callBack qui s'éxécute qd le fadeIn esst terminé.
+                    alert('fin du fadeIn du pJaune');
+                });
+            })
+
+        }) // Fin du Scope
+
+
+    </script>
+</body>
+
+</html>

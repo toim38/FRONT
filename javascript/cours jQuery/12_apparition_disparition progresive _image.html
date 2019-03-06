@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>12_apparition_disparition_progressive_images</title>
+    <style>
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+  <button class="btnDisparait">Faire disparaitre les images</button>
+  <p>
+      <img src="cours_jQuery/images/nature-4029111_640.jpg" alt="" srcset="">
+<img src="cours_jQuery/images/nature-4029111_640 (2).jpg" alt="" srcset="">
+<img src="cour_jQuery/images/nature-4029111_640.jpg" alt="" srcset="">
+
+  </p>
+  <script src="js/jquery-3.3.1.min.js"></script>  
+  <script>
+  $(function(){
+      console.log('jquery chargé');
+      $('.btnDisparait').click(function(){
+          $('img').first().hide('slow',hideNextOne)
+          $(this).next('img').hide('slow',hideNextOne)
+      })
+  })
+  
+  
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>select° DOM</title>
+<style>
+.container{
+
+    border: 2px;
+    width: 70%;
+   margin:0 ;
+   padding: 10px;}
+.lienActifs{
+    font-weight: bold;
+    color:green;
+}
+
+
+
+
+   </style>
+</head>
+<body>
+   <div class="container">
+       <div class="colLeft">contenu de col gauche
+
+        <h2 class="titleSite">
+<a href="">WF3/PoleS</a>
+        </h2>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Incidunt officia voluptatum, sunt recusandae, natus esse eius eveniet
+             autem dolorum atque omnis distinctio ea laborum mollitia obcaecati soluta eos quam? Mollitia.</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus maiores nihil provident atque ipsum ea? Delectus nihil ipsum adipisci magni
+                  necessitatibus quae deserunt maxime neque tempora? Aspernatur repellendus dolore placeat!</p>
+       </div>
+<div class="colRight">
+    contenu de col droite
+<h2>Cours jQuery</h2><p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Ab eveniet nemo dignissimos molestias cum quo excepturi accusamus, vero facere vel! Reiciendis,
+     et provident? Magnam sunt quasi omnis accusantium provident atque.</p>
+<form action="#">
+    <input type="date">
+    <input type="submit">
+</form>
+</div>
+   </div> <!--ici c'est la du pt container-->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script>
+$(function(){
+    console.log('jquery chargé');
+})
+
+//si on select° div class container ca fait $('div.container')
+//mettre ds une variable monElementles elements qui ont la class container
+
+ var monElement = $('container');
+ 
+console.log(monElement.children())//select° ts les elements direct de container
+console.log(monElement.children('.colLeft'));//select° parmis les enfantsde .coàntainer,celui qui a la class colLeft
+console.log(monElement.children().eq(1));//eq(1)veut dire colRight
+    console.log(monElement.children().find('h2'));//select° de ts les h2 parmi les descendants
+    var monPara =$('p.para');
+  console.log ( monPara.next());//renvoie ts les vosins de para
+    console.log(monPara.prev());
+    console.log(monPara.parent());
+    console.log(monPara.next().next());
+console.log($('a').length);
+
+//chercher combien il y a d'objetsh2 ont la class titleChapter
+console.log($('h2.titleChapter').length);
+//chercher combien d'objets a dont l'attribut href est égal à #
+
+console.log($(a[href='#']).length);
+//PR PDF
+//Au click sur ce lien,changer sa couleur,faire un toggleClass(lienActif) pr changer sa couleur
+    console.log($(a[href = 'pdf']).length);
+//au chargement de la page ce lien sera rouge
+    $('a[href = ".pdf"]').css("color","red");
+    $('a[href = ".pdf"]')
+
+
+
+    
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

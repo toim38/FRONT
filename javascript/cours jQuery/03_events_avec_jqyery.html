@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>event jQuery</title>
+</head>
+<body>
+    <!--on charge le jquery-->
+    <script src="js/jquerry-3.3.1.min.js"></script>
+
+    <script>//on charge le scope d jquery
+    $(function(){
+        //ne rien faire avt  d'avoir la ligne suivante en console
+        //tt le scope jquery
+    //fin du scope jquery
+    
+    console.log('jquery est bien chargé');
+var action = function(){
+    alerte('tu as cliqué');
+}
+$('#btn').on('click',action);
+
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css ds jquery</title>
+</head>
+<style>
+article{
+    padding: 20px;
+    width: 200px;
+    background:gold;
+}
+</style>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function(){
+        console.log('jquery est bien chargé');
+    })
+//selectioner, la balise article avec bselecteurs css:article
+$('article').on('click',function(){
+    //tt ce qu'on veut faire au clic surb l'article,this c'est l'article qui est cliqué
+$(this).css("background-color","indianred");
+$('.resultat').css('background-color','blue');
+})//selectioner le § resultat ,lui donner un evenement au clicket changer sa couleur
+//de fond et sa taille de texte 
+$('.resultat').on("click",function(){
+//$(this).css("background-color","hotpink");
+$(this).css({
+    "background-color":"hotpink",
+    "font-size":"5rem",
+    "transform":"rotate(.25turn)"
+});
+
+})
+
+
+
+
+</script>
+
+
+
+<body>
+  <article>contenu de article </article>
+  <p class="resultat">Lorem ipsum dolor sit amet consectetur 
+      adipisicing elit. Blanditiis fugiat nulla beatae inventore totam nam fugit consequatur dolore culpa impedit. Amet accusamus ratione deleniti,
+       consectetur sunt ipsa veritatis voluptates officiis.</p>
+</body>
+</html>

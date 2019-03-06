@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <form action="#">
+
+    <fieldset>
+<legend>infos pro</legend>
+
+<label for="prenom">Ton prenom</label>
+<input type="text"id="prenom">
+<br>
+<label for="motpass">mot de passe</label>
+<input type="password"id="motpasse">
+<br>
+<label for="date">ta date de rdv</label>
+<input type="date"id="date"><br>
+
+<strong>genre</strong>
+<label for="homme">Homme</label>
+<input type="radio" id="homme" value="homme" name="genre">
+
+<label for="femme">femme</label>
+<input type="radio" id="femme" value="femme" name="genre"><br>
+<select name="statut" id="statut">
+    <option value="etudiant">etudiant</option>
+    <option value="enseignant">enseignant</option>
+    <option value="autre">Autre</option>
+
+</select>
+<p>choix de couleur</p>
+
+<p>
+    <input type="checkbox" id="violet" name="couleurs" checked>
+    <label for="violet">violet</label>
+</p>
+
+<p>
+    <input type="checkbox" id="orange" name="couleurs">
+    <label for="orange">orange</label>
+</p>
+<input type="reset" id="annuler" value="Annuler">
+<input type="submit" id="envoyer" value="envoyer">
+    </fieldset>
+   </form>
+
+<div class="info">
+    <p>info</p>
+</div>
+
+
+
+   <script>
+   $(function(){
+       console.log($('#prenom').val());
+       //lire le prenom ds le input et afficher en console
+       //créer l'evenement on submit et stopper la redirect°
+$('#monForm').on('submit',function(ev){
+    //pr stopper la redirect° on va intercepter l'evenement,il faut bien noter l'ev ds les parenthesesde la fonct°
+        ev.preventDefaut();
+    console.log($('#prenom').val());//lit le prenom de l'utilisateur
+    console.log($('#motpasse').val());//lit et affiche le mot de passe
+  console.log($('#statut').val());  //lire et afficher la valeur du statut
+  console.log($(':radio:checked').val());//lit l'etat du bouton radio qui est coché
+  //$('#prenom').val('Michel');      //ecrit Michel ds la zone de texte prenom
+$(':radio').val(['homme'])//select° lebouton radio homme
+//on créer une balise "p" remplir avec la string 'bonjour' concatené avec la valeur de l'input #prenom
+//ajouter cette balisela div class info
+$('.info p').append('bonjour'+$('#prenom').val()).appendTo('.info');
+//créer un 'p' par valeur de champ du formulaire
+
+})
+//correct°
+$('<p>').append('Bonjour:'+$('#prenom').val()).appendTo('.info');
+$('<p>').append('Ton mot de passe est :'+$('#date').val()).appendTo('.info');
+//affiche le staut
+
+   //fin de l'evenementsubmit
+   
+   </script>
+   
+
+</body>
+</html>

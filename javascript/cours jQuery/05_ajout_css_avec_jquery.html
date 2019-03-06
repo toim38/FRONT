@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    section{
+        border:2px solid crimson;
+        width: 70%;
+        padding:20px;   
+        margin: 0 auto;    
+        }
+    
+    </style>
+</head>
+
+<body>
+    <section>
+        Ici contenu de section
+    </section>
+    <p class="resultat">
+    </p>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            console.log('jquery est bien chargé')}
+        
+        //on selectione la balise section,avec la methode css on peut ajouter du css via jquery
+        //la deco se fait ds l  a feuille de style
+        // $('section').css("background-color", "gold");
+        //+ interessant on va ajouter ce" fond gold au clic sur la balise section
+        
+        $('section').on('click', function () {
+           
+            //ajoute plusieurs propriéte css à la section
+            //ici on va utiliser un array
+            $(this).css({
+                'background-color': "orange",
+                'font-size': "2rem"
+            })
+            var couleur = $(this).css("background-color");
+            //on affiche cette valeur ds la console
+            console.log(couleur);
+            //on va ,selectioner la balise p qui a la class resultat !mettrec le point dvt resultat
+            $('.resultat').html('la couleur de fond de la section est:'+couleur)
+                            .css("background-color",couleur);
+
+        }) // fin de la fonction on click
+
+        }) // fin du scope jquery
+
+    </script>
+</body>
+
+</html>

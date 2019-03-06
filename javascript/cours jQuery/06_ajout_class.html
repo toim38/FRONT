@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>class</title>
+    <style >
+        .tailleTextex2{
+            font-size: 2em;
+        }
+    .couleurFond{
+        background-color: teal;
+    }
+
+.carre{
+    width: 200px;
+    height: 200px;
+    background-color: forestgreen;
+    margin-top: 50px;
+    transition: 1s ;   
+    }
+.tourne{
+background-color: gold;
+transform: rotate(.5turn) scale(0.5);
+
+
+
+}
+
+    </style>
+</head>
+<body>
+   <strong>Je suis gras</strong>
+   <em>je suis de l'italique</em>
+   <u>je suis du texte souligné</u>
+   <button>Retire la class</button>
+    <div class="carre">contenu de carré</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+    console.log('jquery chargé');
+//selectioner la balise u et lui donner la class.tailleTextex2 avec la methode jquery.adclass
+$('u').addClass('tailleTextex2');
+//exo pratique qd on clique sur la balise em ,on ajoute la class .couleurFond à la balise strong
+$('em').on('click',function(){
+    $('strong').addClass('couleurFond');
+})
+//on declare 1 fonction stocké ds la variableretireClass
+var retireClass = function(){
+    $('u').removeClass();
+}
+$('button').on('click',retireClass);
+
+//là on execute cette fonction lors du click sur le button
+//on va faire 1 fonction 'tourne carré qui sera declenché au click
+//cette fonction ajoute la class torne au carré
+//ici on declare la fonction
+var tourneCarre=function(){
+$(this).addClass('tourne');
+
+}
+//on execute la fonction au click
+$('.carre').on('click',tourneCarre);
+
+
+
+
+})//fin de script
+</script>
+</body>
+</html>
