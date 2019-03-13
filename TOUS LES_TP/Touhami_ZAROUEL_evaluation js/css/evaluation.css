@@ -1,0 +1,58 @@
+#container-fluid{
+width: 100%;
+height: 90%;
+}/*on met tout ds le container fluid*/
+header{    
+    position: relative;
+    margin: 0 auto;
+}
+.image{
+   position: relative;    
+    background-image:url('img/background.jpg')
+    /*je  positionne l'image pr ensuite superposer le texte à l'interieur de l'image background*/ 
+}
+
+
+h1{
+    position: absolute;      
+ color: burlywood;
+}
+header p{margin-top:45px; 
+    text-align: center;
+    position: absolute;
+    color: burlywood;
+}/*on place le texte ds l'image de fond */
+.formulaire{
+    background-position: relative;
+    margin: 0 auto;
+}
+.car{
+    height: 70%;
+    width: 80%;
+/*on trouve la bonne taille pour les placer*/
+}
+.clear{
+clear: both; 
+}
+.card1{
+        float:right;
+}
+
+.card2{
+    float: right;
+}
+.card3{
+    float:right;
+}.card4{
+    float:left;
+}
+
+footer{
+    width: 100px;
+    height: 200px;
+    }
+    
+adresse{
+    border: 2px black solid;
+}
+ 
